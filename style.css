@@ -1,0 +1,97 @@
+
+#containerPrincipal {
+    position: absolute;
+    width: 100vw;
+    height: 100vw;
+     margin-top: 50%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    background: gray;
+}
+#containerSecundario {
+    
+    font-size: 2vw;
+    background: linear-gradient(rgb(31, 46, 31), gray, green);
+    margin-top: 30%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40vw;
+    width: 30vw;
+    border-radius: 5px;
+    padding: 20px;
+      font-style:oblique ;
+      box-shadow:0px 0px 10px 10px lightgreen;
+}
+#titulo2 {
+    text-align: center;
+    font-style:oblique ;
+   margin-top: 0%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(139, 194, 29);
+    border-radius: 5px;
+    width: 26vw;
+    box-shadow:  5px 5px 10px rgb(139, 194, 29);
+    color: white;
+    font-size:2vw;
+}
+#botão {
+      font-style:oblique ;
+    border-radius: 5px;  
+    text-align: center;
+    color: rgb(212, 201, 201);
+    background: rgb(59, 56, 56);
+    font-size: 1.1vw;
+    box-shadow:  5px 4px 4px rgb(134, 134, 134);
+    margin-left: 2vw;
+    
+    
+}
+#ativ {
+    margin-left: 4vw;
+    box-shadow:  3px 3px 7px rgb(134, 134, 134);
+    font-style:oblique ;
+    font-size: 1.1vw;
+    width: 10vw;
+    height: 1.5vw;
+    border-radius: 5px;
+   
+}
+
+#tabela {
+    width: 25vw;
+    height: 25vw;
+    overflow: hidden;
+    margin-top: 4vw;
+    margin-left: 3vw;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: white;
+    
+}
+#tab option {
+    margin-top: 12px;
+}
+
+#opção, #opção2,#opção3, #opção4, #opção5, #opção6, #opção7, #opção8, #opção9, #opção10 {
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    background:gray;
+    border-radius: 10px;
+}
+
+
+#opção {
+    background: gradient( black,yellow, pink);
+    margin-left: 0.8vw;
+    width: 1.8vw;
+    height: 1.8vw;
+}
+#opção h4 {
+    position: absolute;
+    font-size: 1.2vw;
+    margin-top: 2px;
+    margin-left: 2vw;
+} 
