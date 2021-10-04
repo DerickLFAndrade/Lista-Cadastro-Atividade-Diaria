@@ -16,14 +16,22 @@ var op5d = document.getElementById('opção5')
 var op6d = document.getElementById('opção6')
 var op7d = document.getElementById('opção7')
 var op8d = document.getElementById('opção8')
+var tab = document.getElementById('tabela')
 var resetar = document.getElementById('resetar')
+var container = document.getElementById('containerPrincipal')
+var container2 = document.getElementById('containerSecundario')
 
 var tema1 = document.getElementById('dark')
 var tema2 = document.getElementById('white')
 
 tema1.addEventListener('click', temaDark) 
 function temaDark () { 
-  
+  container.style.background = 'black'
+  container2.style.background = 'linear-gradient(black, gray, white)'
+  container2.style.boxShadow = '0px 5px 10px white'
+  tab.style.background = 'white'
+  resetar.style.background = 'black'
+  resetar.style.color = 'white'
  }
 
 ativ.addEventListener('click', function () {
