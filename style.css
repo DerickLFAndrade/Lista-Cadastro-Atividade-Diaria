@@ -12,11 +12,9 @@
    
     font-size: 15pt;
     background: linear-gradient(rgb(31, 46, 31), gray, green);
-    margin-top: 20%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
+   
     height: 100px;
-    width: 100px;
+    width: 200px;
     border-radius: 5px;
     padding: 20px;
       font-style:oblique ;
@@ -28,7 +26,7 @@
   
     width: 220px;
     height: 10px;
-    margin-left: -20vw;
+    
     font-size: 15pt;
     margin-top: -50px;
 }
@@ -44,7 +42,7 @@
     font-size: 1.2vw;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 180px;
+    margin-left: 120px;
     background: white;
     color: black;
     box-shadow:0px 0px 5px 8px white;
