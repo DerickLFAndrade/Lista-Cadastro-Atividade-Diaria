@@ -11,7 +11,7 @@
 
 #containerSecundario {
    width: 50vw;
-   height: 30vh;
+   height: 20vh;
   margin-top: 50px;
   border-radius: 10px;
     background: linear-gradient(rgb(31, 46, 31), gray, green);
@@ -24,11 +24,11 @@
 #seletor {
     
   
-    width: 500px;
+    width: 50vw;
     height: 10px;
     
     font-size: 15pt;
-    margin-top: 10vw;
+    margin-top: -85px;
 }
 #dark {
     font-size: 1.2vw;
@@ -42,7 +42,7 @@
     font-size: 1.2vw;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 120px;
+    margin-left: 35vw;
     background: white;
     color: black;
     box-shadow:0px 0px 5px 8px white;
@@ -61,13 +61,13 @@
     width: 30vw;
     box-shadow:  5px 5px 10px rgb(139, 194, 29);
     color: white;
-    font-size: 50pt;
+    
     
 }
 
 #titulo2 h2 {
 
-font-size:20pt;
+font-size:3vw;
 }
 #botão {
     
@@ -84,12 +84,12 @@ font-size:20pt;
     
 }
 #ativ {
-    margin-top: 50px;
+    margin-top: 20px;
     border: none;
     box-shadow:  3px 3px 7px rgb(134, 134, 134);
     font-style:oblique ;
     font-size: 1.1vw;
-    width: 50vh;
+    width: 25vw;
     height: 4vh;
     border-radius: 10px;
    
@@ -101,11 +101,11 @@ font-size:20pt;
     width: 50vw;
     height: 50vw;
     overflow: hidden;
-    margin-top: 150px;
+    margin-top: 25vw;
     margin-left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
     border-radius: 10px;
-    padding: 2px;
+   
     background: linear-gradient(rgb(31, 46, 31), gray, green);
     
 }

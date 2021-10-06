@@ -74,10 +74,14 @@ function limpar() {
   botão.disabled = false
 }
 
+
+
 function adicionar() {
 if (ativ.value == '') {
   alert('Para cadastrar uma atividade, preencha o campo "Atividade" abaixo e clique em "Cadastrar"')
 } else {
+  var botdel = document.createElement('button')
+  var botEdt = document.createElement('button')
   if (op2.innerHTML == '' && op3.innerHTML == '' && op4.innerHTML == '' && op5.innerHTML == '' && op6.innerHTML == '' && op7.innerHTML == '' && op8.innerHTML == '') {
 
     op1.innerHTML = `1 - ${ativ.value}`
@@ -86,16 +90,29 @@ if (ativ.value == '') {
     ativ.placeHolder = 'Atividade'
     ativ.focus
     var botdel = document.createElement('button')
-    botdel.innerHTML = 'REMOVER'
+    var botEdt = document.createElement('button')
+    botdel.innerHTML = 'X'
     botdel.style.position = 'absolute'
-    botdel.style.left = '500px'
+    botdel.style.left = '35vw'
     botdel.style.background = 'red'
     botdel.style.borderRadius = '5px'
     botdel.style.color = 'black'
     botdel.style.fontWeight = 'bold'
+    botdel.style.fontSize = '1.3vw'
 
     op1.appendChild(botdel)
-    botdel.style
+
+    botEdt.innerHTML = '✏️'
+    botEdt.style.position = 'absolute'
+    botEdt.style.left = '38vw'
+    botEdt.style.background = 'w'
+    botEdt.style.borderRadius = '5px'
+    botEdt.style.color = 'black'
+    botEdt.style.fontWeight = 'bold'
+    botEdt.style.fontSize = '1.3vw'
+
+    op1.appendChild(botEdt)
+   
     
 
   } else if (op3.innerHTML == '' && op4.innerHTML == '' && op5.innerHTML == '' && op6.innerHTML == '' && op7.innerHTML == '' && op8.innerHTML == '') {
@@ -108,15 +125,28 @@ if (ativ.value == '') {
 
 
     var botdel = document.createElement('button')
-    botdel.innerHTML = 'REMOVER'
+    botdel.innerHTML = 'X'
     botdel.style.position = 'absolute'
-    botdel.style.left = '500px'
+    botdel.style.left = '35vw'
     botdel.style.background = 'red'
     botdel.style.borderRadius = '5px'
     botdel.style.color = 'black'
     botdel.style.fontWeight = 'bold'
+    botdel.style.fontSize = '1.3vw'
 
     op2.appendChild(botdel)
+
+    botEdt.innerHTML = '✏️'
+    botEdt.style.position = 'absolute'
+    botEdt.style.left = '38vw'
+    botEdt.style.background = 'w'
+    botEdt.style.borderRadius = '5px'
+    botEdt.style.color = 'black'
+    botEdt.style.fontWeight = 'bold'
+    botEdt.style.fontSize = '1.3vw'
+
+    op2.appendChild(botEdt)
+
   } else if (op4.innerHTML == '' && op5.innerHTML == '' && op6.innerHTML == '' && op7.innerHTML == '' && op8.innerHTML == '') {
 
     op3.innerHTML = `3 - ${ativ.value}`
@@ -126,15 +156,28 @@ if (ativ.value == '') {
     ativ.focus
 
     var botdel = document.createElement('button')
-    botdel.innerHTML = 'REMOVER'
+    botdel.innerHTML = 'X'
+   
     botdel.style.position = 'absolute'
-    botdel.style.left = '500px'
+    botdel.style.left = '35vw'
     botdel.style.background = 'red'
     botdel.style.borderRadius = '5px'
     botdel.style.color = 'black'
     botdel.style.fontWeight = 'bold'
+    botdel.style.fontSize = '1.3vw'
 
     op3.appendChild(botdel)
+
+    botEdt.innerHTML = '✏️'
+    botEdt.style.position = 'absolute'
+    botEdt.style.left = '38vw'
+    botEdt.style.background = 'w'
+    botEdt.style.borderRadius = '5px'
+    botEdt.style.color = 'black'
+    botEdt.style.fontWeight = 'bold'
+    botEdt.style.fontSize = '1.3vw'
+
+    op3.appendChild(botEdt)
 
   } else if (op5.innerHTML == '' && op6.innerHTML == '' && op7.innerHTML == '' && op8.innerHTML == '') {
 
@@ -145,15 +188,28 @@ if (ativ.value == '') {
     ativ.focus
 
     var botdel = document.createElement('button')
-    botdel.innerHTML = 'REMOVER'
+    botdel.innerHTML = 'X'
+   
     botdel.style.position = 'absolute'
-    botdel.style.left = '500px'
+    botdel.style.left = '35vw'
     botdel.style.background = 'red'
     botdel.style.borderRadius = '5px'
     botdel.style.color = 'black'
     botdel.style.fontWeight = 'bold'
+    botdel.style.fontSize = '1.3vw'
 
     op4.appendChild(botdel)
+
+    botEdt.innerHTML = '✏️'
+    botEdt.style.position = 'absolute'
+    botEdt.style.left = '38vw'
+    botEdt.style.background = 'w'
+    botEdt.style.borderRadius = '5px'
+    botEdt.style.color = 'black'
+    botEdt.style.fontWeight = 'bold'
+    botEdt.style.fontSize = '1.3vw'
+
+    op4.appendChild(botEdt)
 
   } else if (op6.innerHTML == '' && op7.innerHTML == '' && op8.innerHTML == '') {
 
@@ -164,15 +220,30 @@ if (ativ.value == '') {
     ativ.focus
 
     var botdel = document.createElement('button')
-    botdel.innerHTML = 'REMOVER'
+    botdel.innerHTML = 'X'
+
+    
     botdel.style.position = 'absolute'
-    botdel.style.left = '500px'
+    botdel.style.left = '35vw'
     botdel.style.background = 'red'
     botdel.style.borderRadius = '5px'
     botdel.style.color = 'black'
     botdel.style.fontWeight = 'bold'
+    botdel.style.fontSize = '1.3vw'
 
     op5.appendChild(botdel)
+
+    botEdt.innerHTML = '✏️'
+    botEdt.style.position = 'absolute'
+    botEdt.style.left = '38vw'
+    botEdt.style.background = 'w'
+    botEdt.style.borderRadius = '5px'
+    botEdt.style.color = 'black'
+    botEdt.style.fontWeight = 'bold'
+    botEdt.style.fontSize = '1.3vw'
+
+    op5.appendChild(botEdt)
+
   } else if (op7.innerHTML == '' && op8.innerHTML == '') {
 
     op6.innerHTML = `6 - ${ativ.value}`
@@ -182,15 +253,28 @@ if (ativ.value == '') {
     ativ.focus
 
     var botdel = document.createElement('button')
-    botdel.innerHTML = 'REMOVER'
+    botdel.innerHTML = 'X'
     botdel.style.position = 'absolute'
-    botdel.style.left = '500px'
+    botdel.style.left = '35vw'
     botdel.style.background = 'red'
     botdel.style.borderRadius = '5px'
     botdel.style.color = 'black'
     botdel.style.fontWeight = 'bold'
+    botdel.style.fontSize = '1.3vw'
 
     op6.appendChild(botdel)
+
+    botEdt.innerHTML = '✏️'
+    botEdt.style.position = 'absolute'
+    botEdt.style.left = '38vw'
+    botEdt.style.background = 'w'
+    botEdt.style.borderRadius = '5px'
+    botEdt.style.color = 'black'
+    botEdt.style.fontWeight = 'bold'
+    botEdt.style.fontSize = '1.3vw'
+
+    op6.appendChild(botEdt)
+
   } else if (op8.innerHTML == '') {
 
     op7.innerHTML = `7 - ${ativ.value}`
@@ -200,15 +284,28 @@ if (ativ.value == '') {
     ativ.focus
 
     var botdel = document.createElement('button')
-    botdel.innerHTML = 'REMOVER'
+    botdel.innerHTML = 'X'
     botdel.style.position = 'absolute'
-    botdel.style.left = '500px'
+    botdel.style.left = '35vw'
     botdel.style.background = 'red'
     botdel.style.borderRadius = '5px'
     botdel.style.color = 'black'
     botdel.style.fontWeight = 'bold'
+    botdel.style.fontSize = '1.3vw'
 
     op7.appendChild(botdel)
+
+    botEdt.innerHTML = '✏️'
+    botEdt.style.position = 'absolute'
+    botEdt.style.left = '38vw'
+    botEdt.style.background = 'w'
+    botEdt.style.borderRadius = '5px'
+    botEdt.style.color = 'black'
+    botEdt.style.fontWeight = 'bold'
+    botEdt.style.fontSize = '1.3vw'
+
+    op7.appendChild(botEdt)
+
   }
   
   
@@ -222,15 +319,27 @@ if (ativ.value == '') {
     ativ.disabled = true
 
     var botdel = document.createElement('button')
-    botdel.innerHTML = 'REMOVER'
+    botdel.innerHTML = 'X'
     botdel.style.position = 'absolute'
-    botdel.style.left = '500px'
+    botdel.style.left = '35vw'
     botdel.style.background = 'red'
     botdel.style.borderRadius = '5px'
     botdel.style.color = 'black'
     botdel.style.fontWeight = 'bold'
-    botdel.style.boxShadow = '5px 5px 10px red';
+    botdel.style.fontSize = '1.3vw'
     op8.appendChild(botdel)
+
+    botEdt.innerHTML = '✏️'
+    botEdt.style.position = 'absolute'
+    botEdt.style.left = '38vw'
+    botEdt.style.background = 'w'
+    botEdt.style.borderRadius = '5px'
+    botEdt.style.color = 'black'
+    botEdt.style.fontWeight = 'bold'
+    botEdt.style.fontSize = '1.3vw'
+
+    op8.appendChild(botEdt)
+
   }
 }
 }
