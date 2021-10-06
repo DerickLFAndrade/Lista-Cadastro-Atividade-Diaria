@@ -1,24 +1,22 @@
 
 #containerPrincipal {
-    position: absolute;
+   
     width: 100vw;
     height: 100vw;
-     margin-top: 50%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
+     
     background: white;
 }
 
 
 #containerSecundario {
-    
-    font-size: 2vw;
+   
+    font-size: 15pt;
     background: linear-gradient(rgb(31, 46, 31), gray, green);
-    margin-top: 15%;
+    margin-top: 20%;
     margin-left: 50%;
     transform: translate(-50%, -50%);
-    height: 50px;
-    width: 60vw;
+    height: 100px;
+    width: 100px;
     border-radius: 5px;
     padding: 20px;
       font-style:oblique ;
@@ -103,7 +101,7 @@ font-size:5pt;
     width: 50vw;
     height: 50vw;
     overflow: hidden;
-    margin-top: 50px;
+    margin-top: 300px;
     margin-left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
