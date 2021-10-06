@@ -113,14 +113,7 @@ font-size:3vw;
     margin-top: 12px;
 }
 
-#opção1, #opção2,#opção3, #opção4, #opção5, #opção6, #opção7, #opção8, #opção9, #opção10 {
-    margin-top: 4vw;
-    margin-left: 1vw;
-    width: 1.5vw;
-    height: 1.5vw;
-    background:rgb(14, 11, 11);
-    border-radius: 10px;
-}
+
 
 
 
@@ -129,7 +122,7 @@ font-size:3vw;
 #opçãot1, #opçãot2, #opçãot3, #opçãot4, #opçãot5, #opçãot6, #opçãot7, #opçãot8 {
     position: absolute;
     font-size: 1.8vw;
-    margin-top: -5px;
+    margin-top: 10px;
     margin-left: 2vw;
     color: black;
     font-weight: bold;
