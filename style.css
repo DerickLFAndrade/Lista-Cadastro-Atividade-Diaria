@@ -81,8 +81,8 @@ font-size:5pt;
     box-shadow:  3px 3px 7px rgb(134, 134, 134);
     font-style:oblique ;
     font-size: 1.1vw;
-    width: 20vw;
-    height: 5px;
+    width: 10vh;
+    height: 5vh;
    
     border-radius: 5px;
    
@@ -94,7 +94,7 @@ font-size:5pt;
     width: 50vw;
     height: 50vw;
     overflow: hidden;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
