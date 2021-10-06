@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <title>Tela de Login</title>
 </head>
+
 <body>
     <div class="container" id="containerPrincipal">
-         
+
         <div id="containerSecundario">
-         
+
             <div id="titulo2">
                 <h2>Atividades do dia</h2>
             </div>
+
+            <input type="text" name="nome" id="ativ" placeholder="Atividade">
+            <button id="botão"><b>CADASTRAR</b></button>
+            <button id="resetar">RESETAR</button>
+
+
+
+
+
             <div id="seletor">
                 <span id="dark">Tema Dark</span>
                 <span id="white">Tema White</span>
             </div>
-            <input type="text" name="nome" id="ativ" placeholder="Atividade">
-            <span>
-                <button id="botão"><b>CADASTRAR</b></button>
-                
-                <button id="resetar">RESETAR</button>
-            </span>
-            </div>
-            
-        <div id="tabela">
+
+
+        </div>
+
+        <div id="tabela" class="container">
             <div id="opção1">
                 <span id="opçãot1"></span>
             </div>
@@ -59,11 +69,18 @@
             <div id="opção8">
                 <span id="opçãot8"></span>
             </div>
-        
+
         </div>
 
-        
+
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
     <script src="js.js"></script>
+
+    
 </body>
+
 </html>

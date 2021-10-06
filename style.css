@@ -9,57 +9,66 @@
     background: white;
 }
 
-#seletor {
-    
-    width: 220px;
-    height: 18px;
-    background-color: rgb(146, 146, 146);
-    font-size: 15pt;
-   
-}
-#dark {
-    width: 30vw;
-    background: black;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow:0px 0px 15px 15px black;
-}
-#white {
-    width: 30vw;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 20px;
-    background: white;
-    color: black;
-    box-shadow:0px 0px 15px 14px white;
-}
+
 #containerSecundario {
     
     font-size: 2vw;
     background: linear-gradient(rgb(31, 46, 31), gray, green);
-    margin-top: 12%;
+    margin-top: 15%;
     margin-left: 50%;
     transform: translate(-50%, -50%);
-    height: 20vw;
-    width: 45vw;
+    height: 50px;
+    width: 60vw;
     border-radius: 5px;
     padding: 20px;
       font-style:oblique ;
-      box-shadow:0px 0px 10px 10px lightgreen;
+      box-shadow:0px 2px 5px lightgreen;
 }
+
+#seletor {
+    
+  
+    width: 220px;
+    height: 10px;
+    margin-left: -20vw;
+    font-size: 15pt;
+    margin-top: -50px;
+}
+#dark {
+    font-size: 1.2vw;
+    background: black;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow:0px 0px 5px 8px black;
+}
+#white {
+    font-size: 1.2vw;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 180px;
+    background: white;
+    color: black;
+    box-shadow:0px 0px 5px 8px white;
+    border: none;
+}
+
 #titulo2 {
     text-align: center;
     font-style:oblique ;
-   margin-top: 0%;
+   margin-top: -1%;
     margin-left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -80%);
     background: rgb(139, 194, 29);
     border-radius: 5px;
     width: 26vw;
     box-shadow:  5px 5px 10px rgb(139, 194, 29);
     color: white;
-    font-size:2vw;
+    
+}
+
+#titulo2 h2 {
+font-size:5pt;
 }
 #botão {
     
@@ -69,29 +78,32 @@
     color: rgb(212, 201, 201);
     background: rgb(59, 56, 56);
     font-size: 1.1vw;
-    box-shadow:  5px 4px 4px rgb(134, 134, 134);
-    margin-left: 10px;
-    margin-top: 35px;
-    height: 30px;    
+    box-shadow:  0px 0px 5px rgb(134, 134, 134);
+   border: none;
+    height:8px;   
+    width: 9.7w; 
     
 }
 #ativ {
-    margin-left: 0vw;
+    margin-top: -20px;
+    border: none;
     box-shadow:  3px 3px 7px rgb(134, 134, 134);
     font-style:oblique ;
     font-size: 1.1vw;
-    width: 30vw;
-    height: 2vw;
-    
+    width: 20vw;
+    height: 5px;
+   
     border-radius: 5px;
    
 }
 
+
 #tabela {
+   
     width: 50vw;
     height: 50vw;
     overflow: hidden;
-    margin-top: 18%;
+    margin-top: 50px;
     margin-left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
@@ -125,19 +137,22 @@
     font-weight: bold;
     font-style: monospace;
 } 
-#resetar {
-    
+#resetar{
+    border: none;
     font-style:monospace ;
     border-radius: 5px;  
     text-align: center;
-    color: rgb(0, 0, 0);
+     font-style:oblique ;
+    border-radius: 5px;  
+    text-align: center;
+    color: rgb(65, 60, 60);
     background: greenyellow;
     font-size: 1.1vw;
-    box-shadow:  5px 4px 4px rgb(134, 134, 134);
-    margin-left: 33vw;
-    margin-top: 5px;
-    height: 2vw;
-    margin-top: 2.5vw;
-    width: 8.5vw;
+    box-shadow:  0px  0px 8px rgb(105, 179, 136);
+    margin-left: 1px;
+   
+    height: 8px;
+   
+    width: 9.7vw;
     font-weight: bold;
 }

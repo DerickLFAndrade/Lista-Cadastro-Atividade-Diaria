@@ -25,14 +25,32 @@ var tema1 = document.getElementById('dark')
 var tema2 = document.getElementById('white')
 
 tema1.addEventListener('click', temaDark) 
+tema2.addEventListener('click', temaWhite)
 function temaDark () { 
+  ativ.style.background = 'black'
+  ativ.style.color = 'white'
   container.style.background = 'black'
   container2.style.background = 'linear-gradient(black, gray, white)'
-  container2.style.boxShadow = '0px 5px 10px white'
+  container2.style.boxShadow = '0px 0px 2px white'
   tab.style.background = 'white'
-  resetar.style.background = 'black'
+  resetar.style.background = 'gray'
   resetar.style.color = 'white'
+  botão.style.background = 'black'
+  botão.style.color = 'white'
  }
+function temaWhite() {
+  ativ.style.background = 'white'
+  ativ.style.color = 'black'
+  container.style.background = 'white'
+  container2.style.background = 'linear-gradient(black, gray, black)'
+  container2.style.boxShadow = '0px 0px 0px white'
+  tab.style.background = 'white'
+  resetar.style.background = 'white'
+  resetar.style.color = 'black'
+  botão.style.background = 'gray'
+  botão.style.color = 'black'
+  tab.style.background = 'gray'
+}
 
 ativ.addEventListener('click', function () {
   if (ativ.value == 'Atividade') {
