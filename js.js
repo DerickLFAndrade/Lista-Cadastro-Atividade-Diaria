@@ -82,10 +82,12 @@ function adicionar() {
   } else {
     var botdel = document.createElement('button')
     var botEdt = document.createElement('button')
-    if (op2.innerHTML == '' && op3.innerHTML == '' && op4.innerHTML == '' && op5.innerHTML == '' && op6.innerHTML == '' && op7.innerHTML == '' && op8.innerHTML == '') {
-
-      op1.innerHTML = `- ${ativ.value}`
-      op2.innerHTML = '-'
+    var botEditSave = document.createElement('button')
+    
+    if (op2.value == '' && op3.value == '' && op4.value == '' && op5.value == '' && op6.value == '' && op7.value == '' && op8.value == '') {
+      
+      op1.value = `- ${ativ.value}`
+      op2.value = '-'
       ativ.value = ''
       ativ.placeHolder = 'Atividade'
       ativ.focus
@@ -93,82 +95,140 @@ function adicionar() {
       var botEdt = document.createElement('button')
       botdel.innerHTML = 'X'
       botdel.style.position = 'absolute'
-      botdel.style.left = '35vw'
+      botdel.style.left = '37vw'
+      botdel.style.top = '3vw'
       botdel.style.background = 'red'
       botdel.style.borderRadius = '5px'
       botdel.style.color = 'black'
       botdel.style.fontWeight = 'bold'
-      botdel.style.fontSize = '1.3vw'
+      botdel.style.fontSize = '1.2vw'
+      botdel.style.width = '3vw'
 
       botdel.addEventListener('click', function () {
-        op1.remove(op1)
-        op1d.remove(op1d)
-        botão.style.visibility = 'visible'
-        ativ.value = ''
-        ativ.placeholder = 'Atividade'
-        ativ.disabled = false
-        botão.disabled = false
+      
+        
+        if(confirm == true) {
+          op1.remove(op1)
+
+          //op1d.remove(op1d)
+          botão.style.visibility = 'visible'
+          ativ.value = ''
+          ativ.placeholder = 'Atividade'
+          ativ.disabled = false
+          botão.disabled = false
+        } 
+       
 
 
       })
 
-      op1.appendChild(botdel)
+      op1d.appendChild(botdel)
 
       botEdt.innerHTML = '✏️'
       botEdt.style.position = 'absolute'
-      botEdt.style.left = '38vw'
-      botEdt.style.background = 'w'
+      botEdt.style.left = '39.8vw'
+      botEdt.style.top = '3vw'
       botEdt.style.borderRadius = '5px'
       botEdt.style.color = 'black'
       botEdt.style.fontWeight = 'bold'
-      botEdt.style.fontSize = '1.3vw'
+      botEdt.style.width = '3vw'
+      botEdt.style.background = 'none'
+     
 
-      op1.appendChild(botEdt)
+      botEdt.addEventListener('click', function() {
+        op1.disabled = false
+        botEditSave.innerHTML = 'SAVE'
+        botEditSave.style.position = 'absolute'
+        botEditSave.style.left = '42.8vw'
+        botEditSave.style.top = '3vw'
+        botEditSave.style.background = 'greenyellow'
+        botEditSave.style.borderRadius = '5px'
+        botEditSave.style.color = 'black'
+        botEditSave.style.fontWeight = 'bold'
+        botEditSave.style.fontSize = '1.2vw'
+        botEditSave.style.width = '4vw'
+        botEditSave.style.textAlign = 'center'
+        op1d.appendChild(botEditSave)
+
+        botEditSave.addEventListener('click', function() {
+          op1.disabled = true
+          botEditSave.remove(botEditSave)
+        })
+
+      })
+      
+      op1d.appendChild(botEdt)
 
 
 
-    } else if (op3.innerHTML == '' && op4.innerHTML == '' && op5.innerHTML == '' && op6.innerHTML == '' && op7.innerHTML == '' && op8.innerHTML == '') {
+    } else if (op3.value == '' && op4.value == '' && op5.value == '' && op6.value == '' && op7.value == '' && op8.value == '') {
 
-      op2.innerHTML = `- ${ativ.value}`
-      op2.style.marginTop = '3vw'
-      op3.innerHTML = '- '
+      op2.value = `- ${ativ.value}`
+      op3.value = '-'
       ativ.value = ''
-      ativ.placeholder = 'Atividade'
+      ativ.placeHolder = 'Atividade'
       ativ.focus
-
-
       var botdel = document.createElement('button')
+      var botEdt = document.createElement('button')
       botdel.innerHTML = 'X'
       botdel.style.position = 'absolute'
-      botdel.style.left = '35vw'
+      botdel.style.left = '37vw'
+      botdel.style.top = '8vw'
       botdel.style.background = 'red'
       botdel.style.borderRadius = '5px'
       botdel.style.color = 'black'
       botdel.style.fontWeight = 'bold'
-      botdel.style.fontSize = '1.3vw'
+      botdel.style.fontSize = '1.2vw'
+      botdel.style.width = '3vw'
 
       botdel.addEventListener('click', function () {
         op2.remove(op2)
-        op2d.remove(op2d)
+        //op1d.remove(op1d)
         botão.style.visibility = 'visible'
         ativ.value = ''
         ativ.placeholder = 'Atividade'
         ativ.disabled = false
         botão.disabled = false
+
+
       })
 
-      op2.appendChild(botdel)
+      op2d.appendChild(botdel)
 
       botEdt.innerHTML = '✏️'
       botEdt.style.position = 'absolute'
-      botEdt.style.left = '38vw'
-      botEdt.style.background = 'w'
+      botEdt.style.left = '39.8vw'
+      botEdt.style.top = '8vw'
       botEdt.style.borderRadius = '5px'
       botEdt.style.color = 'black'
       botEdt.style.fontWeight = 'bold'
-      botEdt.style.fontSize = '1.3vw'
+      botEdt.style.width = '3vw'
+      botEdt.style.background = 'none'
 
-      op2.appendChild(botEdt)
+
+      botEdt.addEventListener('click', function () {
+        op2.disabled = false
+        botEditSave.innerHTML = 'SAVE'
+        botEditSave.style.position = 'absolute'
+        botEditSave.style.left = '42.8vw'
+        botEditSave.style.top = '8vw'
+        botEditSave.style.background = 'greenyellow'
+        botEditSave.style.borderRadius = '5px'
+        botEditSave.style.color = 'black'
+        botEditSave.style.fontWeight = 'bold'
+        botEditSave.style.fontSize = '1.2vw'
+        botEditSave.style.width = '4vw'
+        botEditSave.style.textAlign = 'center'
+        op2d.appendChild(botEditSave)
+
+        botEditSave.addEventListener('click', function () {
+          op2.disabled = true
+          botEditSave.remove(botEditSave)
+        })
+
+      })
+
+      op2d.appendChild(botEdt)
 
     } else if (op4.innerHTML == '' && op5.innerHTML == '' && op6.innerHTML == '' && op7.innerHTML == '' && op8.innerHTML == '') {
 

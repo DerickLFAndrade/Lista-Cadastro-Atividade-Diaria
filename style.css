@@ -97,7 +97,7 @@ font-size:3vw;
 
 
 #tabela {
-   
+   display: inline-block;
     width: 50vw;
     height: 50vw;
     overflow: hidden;
@@ -120,14 +120,21 @@ font-size:3vw;
 
 
 #opçãot1, #opçãot2, #opçãot3, #opçãot4, #opçãot5, #opçãot6, #opçãot7, #opçãot8 {
-    position: absolute;
+   
+    height: 2vw;
+   border-radius: 10px;
     font-size: 1.8vw;
-    margin-top: 10px;
-    margin-left: 2vw;
+    margin-top: 40px;
+    margin-left: 1vw;
     color: black;
     font-weight: bold;
     font-style: monospace;
+    text-align: left;
+    width: 35vw;
+    background: none;
+   
 } 
+
 #resetar{
     border: none;
     font-style:monospace ;
