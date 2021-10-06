@@ -116,7 +116,9 @@ font-size:3vw;
 
 
 
-
+#opção1 {
+    width: 35vw;
+}
 
 
 #opçãot1, #opçãot2, #opçãot3, #opçãot4, #opçãot5, #opçãot6, #opçãot7, #opçãot8 {
@@ -124,7 +126,7 @@ font-size:3vw;
     height: 2vw;
    border-radius: 10px;
     font-size: 1.8vw;
-    margin-top: 40px;
+    margin-top: 3vw;
     margin-left: 1vw;
     color: black;
     font-weight: bold;
