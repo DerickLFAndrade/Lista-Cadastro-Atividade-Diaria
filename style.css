@@ -106,7 +106,7 @@ font-size:3vw;
     transform: translate(-50%, -40%);
     border-radius: 10px;
    
-    background: linear-gradient(rgb(31, 46, 31), gray, green);
+    background: linear-gradient(rgb(77, 88, 77), gray, green);
     
 }
 #tab option {
@@ -136,7 +136,9 @@ font-size:3vw;
     background: none;
    
 } 
-
+.inps {
+    background-color: white;
+}
 #resetar{
     border: none;
     font-style:monospace ;

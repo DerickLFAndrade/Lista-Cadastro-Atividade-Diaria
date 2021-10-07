@@ -1,4 +1,5 @@
 var ativ = document.getElementById('ativ')
+var titulo = document.getElementById('titulo2')
 var botão = document.getElementById('botão')
 var op1 = document.getElementById('opçãot1')
 var op2 = document.getElementById('opçãot2')
@@ -16,6 +17,7 @@ var op5d = document.getElementById('opção5')
 var op6d = document.getElementById('opção6')
 var op7d = document.getElementById('opção7')
 var op8d = document.getElementById('opção8')
+var inps = document.getElementsByClassName('inps')
 var tab = document.getElementById('tabela')
 var resetar = document.getElementById('resetar')
 var container = document.getElementById('containerPrincipal')
@@ -29,29 +31,68 @@ var tema2 = document.getElementById('white')
 tema1.addEventListener('click', temaDark)
 tema2.addEventListener('click', temaWhite)
 function temaDark() {
+  op1.style.background = 'black'
+  op1.style.color = 'white'
+  op2.style.background = 'black'
+  op2.style.color = 'white'
+  op3.style.background = 'black'
+  op3.style.color = 'white'
+  op4.style.background = 'black'
+  op4.style.color = 'white'
+  op5.style.background = 'black'
+  op5.style.color = 'white'
+  op6.style.background = 'black'
+  op6.style.color = 'white'
+  op7.style.background = 'black'
+  op7.style.color = 'white'
+  op8.style.background = 'black'
+  op8.style.color = 'white'
+  titulo.style.background = 'white'
+  titulo.style.color = 'black'
+  titulo.style.boxShadow = '5px 5px 10px rgb(66, 66, 65)'
   ativ.style.background = 'black'
   ativ.style.color = 'white'
   container.style.background = 'black'
   container2.style.background = 'linear-gradient(black, gray, white)'
   container2.style.boxShadow = '0px 0px 2px white'
-  tab.style.background = 'white'
+  tab.style.background = 'gray'
   resetar.style.background = 'gray'
   resetar.style.color = 'white'
   botão.style.background = 'black'
   botão.style.color = 'white'
 }
 function temaWhite() {
+  op1.style.background = 'white'
+  op1.style.color = 'black'
+  op2.style.background = 'white'
+  op2.style.color = 'black'
+  op3.style.background = 'white'
+  op3.style.color = 'black'
+  op4.style.background = 'white'
+  op4.style.color = 'black'
+  op5.style.background = 'white'
+  op5.style.color = 'black'
+  op6.style.background = 'white'
+  op6.style.color = 'black'
+  op7.style.background = 'white'
+  op7.style.color = 'black'
+  op8.style.background = 'white'
+  op8.style.color = 'black'
+  titulo.style.background = 'black'
+  titulo.style.color = 'white'
+  titulo.style.boxShadow = '5px 5px 10px white'
   ativ.style.background = 'white'
   ativ.style.color = 'black'
   container.style.background = 'white'
   container2.style.background = 'linear-gradient(black, gray, black)'
   container2.style.boxShadow = '0px 0px 0px white'
-  tab.style.background = 'white'
+ 
   resetar.style.background = 'white'
   resetar.style.color = 'black'
   botão.style.background = 'gray'
   botão.style.color = 'black'
-  tab.style.background = 'gray'
+  tab.style.background = 'linear-gradient(white, gray, black)'
+  
 }
 
 ativ.addEventListener('click', function () {
@@ -60,21 +101,7 @@ ativ.addEventListener('click', function () {
     ativ.focus
   }
 })
-function limpar() {
-  op1.value = ''
-  op2.value = ''
-  op3.value = ''
-  op4.value = ''
-  op5.value = ''
-  op6.value = ''
-  op7.value = ''
-  op8.value = ''
-  botão.style.visibility = 'visible'
-  ativ.value = ''
-  ativ.placeholder = 'Atividade'
-  ativ.disabled = false
-  botão.disabled = false
-}
+
 
 
 
@@ -82,11 +109,28 @@ function adicionar() {
   if (ativ.value == '') {
     alert('Para cadastrar uma atividade, preencha o campo "Atividade" abaixo e clique em "Cadastrar"')
   } else {
+    resetar.addEventListener('click', limpar)
+    function limpar() {
+      op1.value = ''
+      op2.value = ''
+      op3.value = ''
+      op4.value = ''
+      op5.value = ''
+      op6.value = ''
+      op7.value = ''
+      op8.value = ''
+      botão.style.visibility = 'visible'
+      ativ.value = ''
+      ativ.placeholder = 'Atividade'
+      ativ.disabled = false
+      botão.disabled = false
+      botdel.remove(botdel)
+      botEdt.remove(botEdt)
+    }
+   
     var botdel = document.createElement('button')
     var botEdt = document.createElement('button')
     var botEditSave = document.createElement('button')
-   
-
 
     
 
@@ -260,7 +304,7 @@ function adicionar() {
             op2.disabled = true
             botão.disabled = false
             botEditSave.remove(botEditSave)
-            ativ.disabled = false
+            ativ.disabled = true
           })
         }
 
@@ -279,8 +323,8 @@ function adicionar() {
 
         //Função do botão editar e salvar uma tarefa
         botEditSave.addEventListener('click', function () {
-          op1.disabled = true
-
+          op2.disabled = true
+          
           botEditSave.remove(botEditSave)
         })
 
@@ -903,6 +947,6 @@ function adicionar() {
   }
 }
 botão.addEventListener('click', adicionar)
-resetar.addEventListener('click', limpar)
+
 
 
