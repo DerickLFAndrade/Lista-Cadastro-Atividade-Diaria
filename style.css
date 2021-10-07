@@ -3,20 +3,19 @@
     
     width: 100vw;
     height: 100vw;
-    margin-left: 50%;
-    margin-top: 50%;
-    transform: translate(-50%, -50%);
+    
     position: absolute;
 }
 
 #containerSecundario {
    width: 400px;
-   height: 100px;
+   height: 200px;
   margin-top: 5px;
   border-radius: 10px;
     background: linear-gradient(rgb(31, 46, 31), gray, green);
       font-style:oblique ;
       box-shadow:0px 2px 5px lightgreen;
+      margin-left: 5%;
       
 
 }
@@ -28,12 +27,12 @@
   
     width: 380px;
     height: 10px;
-    
+    margin-left: 25px;
     font-size: 15pt;
-    margin-top: -85px;
+    margin-top: 15px;
 }
 #dark {
-    font-size: 1.2vw;
+    font-size: 12pt;
     background: black;
     color: white;
     cursor: pointer;
@@ -41,10 +40,10 @@
     box-shadow:0px 0px 5px 8px black;
 }
 #white {
-    font-size: 1.2vw;
+    font-size: 12pt;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 300px;
+    margin-left: 150px;
     background: white;
     color: black;
     box-shadow:0px 0px 5px 8px white;
@@ -60,7 +59,7 @@
    
     background: rgb(139, 194, 29);
     border-radius: 5px;
-    width: 200px;
+    width: 380px;
     box-shadow:  5px 5px 10px rgb(139, 194, 29);
     color: white;
     
@@ -69,30 +68,56 @@
 
 #titulo2 h2 {
 
-font-size:15pt;
+font-size:30pt;
 }
 #botão {
-    
+    position: absolute;
       font-style:oblique ;
     border-radius: 5px;  
     text-align: center;
     color: rgb(212, 201, 201);
     background: rgb(59, 56, 56);
-    font-size: 1.1vw;
+    font-size: 10pt;
     box-shadow:  0px 0px 5px rgb(134, 134, 134);
    border: none;
     height:20px;   
-    width: 40px; 
+    width: 100px;
+    margin-top: 100px;
+   
     
 }
+
+#resetar{
+    position: absolute;
+    border: none;
+    font-style:monospace ;
+    border-radius: 5px;  
+    text-align: center;
+     font-style:oblique ;
+    border-radius: 5px;  
+    text-align: center;
+    color: rgb(65, 60, 60);
+    background: greenyellow;
+    font-size: 10pt;
+    box-shadow:  0px  0px 8px rgb(105, 179, 136);
+    margin-left: 250px;
+    margin-top: 100px;
+
+   
+   height:20px;   
+    width: 100px; 
+    font-weight: bold;
+}
+
 #ativ {
-    margin-top: 20px;
+    position: absolute;
+    margin-top: 60px;
     border: none;
     box-shadow:  3px 3px 7px rgb(134, 134, 134);
     font-style:oblique ;
-    font-size: 1.1vw;
-    width: 25vw;
-    height: 4vh;
+    font-size: 10pt;
+    width: 350px;
+    height: 20px;
     border-radius: 10px;
    
 }
@@ -100,12 +125,11 @@ font-size:15pt;
 
 #tabela {
    display: inline-block;
-    width: 50vw;
-    height: 50vw;
+    width: 410px;
+    height: 500px;
     overflow: hidden;
-    margin-top: 25vw;
-    margin-left: 50%;
-    transform: translate(-50%, -40%);
+    margin-top: 20px;
+    margin-left: 5%;
     border-radius: 10px;
    
     background: linear-gradient(rgb(77, 88, 77), gray, green);
@@ -118,47 +142,27 @@ font-size:15pt;
 
 
 
-#opção1 {
-    width: 35vw;
-}
+
 
 
 #opçãot1, #opçãot2, #opçãot3, #opçãot4, #opçãot5, #opçãot6, #opçãot7, #opçãot8 {
    
     height: 2vw;
    border-radius: 10px;
-    font-size: 1.8vw;
+    font-size: 12pt;
     margin-top: 3vw;
     margin-left: 1vw;
     color: black;
     font-weight: bold;
     font-style: monospace;
     text-align: left;
-    width: 35vw;
+    width: 270px;
+    height: 25px;
     background: none;
    
 } 
 .inps {
     background-color: white;
-}
-#resetar{
-    border: none;
-    font-style:monospace ;
-    border-radius: 5px;  
-    text-align: center;
-     font-style:oblique ;
-    border-radius: 5px;  
-    text-align: center;
-    color: rgb(65, 60, 60);
-    background: greenyellow;
-    font-size: 1.1vw;
-    box-shadow:  0px  0px 8px rgb(105, 179, 136);
-    margin-left: 1px;
-   
-    height: 30px;
-   
-    width: 9.7vw;
-    font-weight: bold;
 }
 
 
