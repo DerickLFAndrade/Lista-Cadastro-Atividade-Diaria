@@ -979,25 +979,64 @@ function adicionar() {
       var botdel = document.createElement('button')
       var botEdt = document.createElement('button')
       var botEditSave = document.createElement('button')
-     atividCadast = document.createElement('input')
+      var atividCadast = document.createElement('input')
       botdel.innerHTML = 'X'
       
      
-     
+     //deletar tarefa
       botdel.style.background = 'red'
       botdel.style.borderRadius = '5px'
       botdel.style.color = 'black'
       botdel.style.fontWeight = 'bold'
       botdel.style.fontSize = '10pt'
+      botdel.style.padding = '2px'
       botdel.style.width = '35px'
       botdel.style.textAlign = 'center'
 
+      botdel.addEventListener('click', function () {
+        atividCadast.remove(atividCadast)
+        botdel.remove(botdel)
+        botEdt.remove(botEdt)
+        })
 
+      //editar tarefa 
+      botEdt.innerHTML = 'Edit'
+      botEdt.style.borderRadius = '5px'
+      botEdt.style.color = 'black'
+      botEdt.style.fontWeight = 'bold'
+      botEdt.style.width = '40px'
+      botEdt.style.textAlign = 'center'
+      botEdt.style.fontSize = '10pt'
+      botEdt.style.padding = '2px'
+      botEdt.style.background = 'none'
+
+
+      //Salvar edição
+      botEditSave.innerHTML = 'Salvar'
+      botEditSave.style.marginTop = '-4px'
+      botEditSave.style.marginLeft = '7px'
+      botEditSave.style.background = 'greenyellow'
+      botEditSave.style.borderRadius = '5px'
+      botEditSave.style.position = 'absolute'
+      botEditSave.style.color = 'black'
+      botEditSave.style.fontWeight = 'bold'
+      botEditSave.style.fontSize = '10pt'
+      botEditSave.style.width = '50px'
+      botEditSave.style.textAlign = 'center'
+     botEditSave.style.padding = '2px'
+      botEdt.addEventListener('click', function () {
+        botEdt.appendChild(botEditSave)
+        })
       
+   
+
+      //linha.style.marginLeft = '0%'
+     // linha.style.width = '250px'
       
       atividCadast.type = 'text'
       atividCadast.disabled = true
-      atividCadast.style.width = '290px'
+      atividCadast.style.width = '270px'
+      atividCadast.style.marginTop = '15px'
       atividCadast.style.fontSize = '10pt'
       if(container.style.background == 'black') {
         atividCadast.style.background = 'black'
@@ -1006,11 +1045,14 @@ function adicionar() {
       }
       atividCadast.style.borderRadius = '5px'
       
-      atividCadast.style.color = 'white'
+      atividCadast.style.color = 'black'
       atividCadast.value = ativ.value
+      
+      //tab.appendChild(tabela)
+      //tabela.appendChild(linha)
       tab.appendChild(atividCadast)
       tab.appendChild(botdel)
-      
+      tab.appendChild(botEdt)
     }
   
     }
