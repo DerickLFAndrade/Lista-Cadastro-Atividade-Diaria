@@ -25,28 +25,15 @@ var container2 = document.getElementById('containerSecundario')
 
 var tema1 = document.getElementById('dark')
 var tema2 = document.getElementById('white')
-
+var atividCadast = document.createElement('input')
 
 
 tema1.addEventListener('click', temaDark)
 tema2.addEventListener('click', temaWhite)
 function temaDark() {
-  op1.style.background = 'black'
-  op1.style.color = 'white'
-  op2.style.background = 'black'
-  op2.style.color = 'white'
-  op3.style.background = 'black'
-  op3.style.color = 'white'
-  op4.style.background = 'black'
-  op4.style.color = 'white'
-  op5.style.background = 'black'
-  op5.style.color = 'white'
-  op6.style.background = 'black'
-  op6.style.color = 'white'
-  op7.style.background = 'black'
-  op7.style.color = 'white'
-  op8.style.background = 'black'
-  op8.style.color = 'white'
+  atividCadast.style.background = 'black'
+  atividCadast.style.color = 'white'
+  
   titulo.style.background = 'white'
   titulo.style.color = 'black'
   titulo.style.boxShadow = '5px 5px 10px rgb(66, 66, 65)'
@@ -62,22 +49,9 @@ function temaDark() {
   botão.style.color = 'white'
 }
 function temaWhite() {
-  op1.style.background = 'white'
-  op1.style.color = 'black'
-  op2.style.background = 'white'
-  op2.style.color = 'black'
-  op3.style.background = 'white'
-  op3.style.color = 'black'
-  op4.style.background = 'white'
-  op4.style.color = 'black'
-  op5.style.background = 'white'
-  op5.style.color = 'black'
-  op6.style.background = 'white'
-  op6.style.color = 'black'
-  op7.style.background = 'white'
-  op7.style.color = 'black'
-  op8.style.background = 'white'
-  op8.style.color = 'black'
+  atividCadast.style.background = 'white'
+  atividCadast.style.color = 'black'
+ 
   titulo.style.background = 'black'
   titulo.style.color = 'white'
   titulo.style.boxShadow = '5px 5px 10px white'
@@ -963,10 +937,33 @@ function adicionar() {
         botdel.remove(botdel)
         botEdt.remove(botEdt)
       }
-
       var botdel = document.createElement('button')
       var botEdt = document.createElement('button')
       var botEditSave = document.createElement('button')
+
+      botdel.innerHTML = 'X'
+      botdel.style.position = 'absolute'
+      botdel.style.left = '37vw'
+      botdel.style.top = '3vw'
+      botdel.style.background = 'red'
+      botdel.style.borderRadius = '5px'
+      botdel.style.color = 'black'
+      botdel.style.fontWeight = 'bold'
+      botdel.style.fontSize = '10pt'
+      botdel.style.width = '3vw'
+
+
+      
+      
+      atividCadast.type = 'text'
+      atividCadast.disabled = true
+      atividCadast.style.width = '290px'
+      atividCadast.style.borderRadius = '5px'
+      atividCadast.style.background = 'none'
+      atividCadast.style.color = 'white'
+      atividCadast.value = ativ.value
+      tab.appendChild(atividCadast)
+      tab.appendChild(botdel)
       
     }
   
