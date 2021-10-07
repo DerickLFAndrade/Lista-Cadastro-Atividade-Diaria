@@ -25,8 +25,45 @@ var container2 = document.getElementById('containerSecundario')
 
 var tema1 = document.getElementById('dark')
 var tema2 = document.getElementById('white')
-var atividCadast = document.createElement('input')
 
+tema1.addEventListener('click', temaDark)
+tema2.addEventListener('click', temaWhite)
+function temaDark() {
+  
+
+  titulo.style.background = 'white'
+  titulo.style.color = 'black'
+  titulo.style.boxShadow = '5px 5px 10px rgb(66, 66, 65)'
+  ativ.style.background = 'black'
+  ativ.style.color = 'white'
+  container.style.background = 'black'
+  container2.style.background = 'linear-gradient(black, gray, white)'
+  container2.style.boxShadow = '0px 0px 2px white'
+  tab.style.background = 'gray'
+  resetar.style.background = 'gray'
+  resetar.style.color = 'white'
+  botão.style.background = 'black'
+  botão.style.color = 'white'
+}
+function temaWhite() {
+  
+
+  titulo.style.background = 'black'
+  titulo.style.color = 'white'
+  titulo.style.boxShadow = '5px 5px 10px white'
+  ativ.style.background = 'white'
+  ativ.style.color = 'black'
+  container.style.background = 'white'
+  container2.style.background = 'linear-gradient(black, gray, black)'
+  container2.style.boxShadow = '0px 0px 0px white'
+
+  resetar.style.background = 'white'
+  resetar.style.color = 'black'
+  botão.style.background = 'gray'
+  botão.style.color = 'black'
+  tab.style.background = 'linear-gradient(white, gray, black)'
+
+}
 
 tema1.addEventListener('click', temaDark)
 tema2.addEventListener('click', temaWhite)
@@ -937,20 +974,23 @@ function adicionar() {
         botdel.remove(botdel)
         botEdt.remove(botEdt)
       }
+
+      
       var botdel = document.createElement('button')
       var botEdt = document.createElement('button')
       var botEditSave = document.createElement('button')
-
+     atividCadast = document.createElement('input')
       botdel.innerHTML = 'X'
-      botdel.style.position = 'absolute'
-      botdel.style.left = '37vw'
-      botdel.style.top = '3vw'
+      
+     
+     
       botdel.style.background = 'red'
       botdel.style.borderRadius = '5px'
       botdel.style.color = 'black'
       botdel.style.fontWeight = 'bold'
       botdel.style.fontSize = '10pt'
-      botdel.style.width = '3vw'
+      botdel.style.width = '35px'
+      botdel.style.textAlign = 'center'
 
 
       
@@ -958,8 +998,14 @@ function adicionar() {
       atividCadast.type = 'text'
       atividCadast.disabled = true
       atividCadast.style.width = '290px'
+      atividCadast.style.fontSize = '10pt'
+      if(container.style.background == 'black') {
+        atividCadast.style.background = 'black'
+      } else {
+        atividCadast.style.background = 'white'
+      }
       atividCadast.style.borderRadius = '5px'
-      atividCadast.style.background = 'none'
+      
       atividCadast.style.color = 'white'
       atividCadast.value = ativ.value
       tab.appendChild(atividCadast)
