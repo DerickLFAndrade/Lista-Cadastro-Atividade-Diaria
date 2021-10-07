@@ -68,8 +68,7 @@ function temaWhite() {
 tema1.addEventListener('click', temaDark)
 tema2.addEventListener('click', temaWhite)
 function temaDark() {
-  atividCadast.style.background = 'black'
-  atividCadast.style.color = 'white'
+  
 
   titulo.style.background = 'white'
   titulo.style.color = 'black'
@@ -86,8 +85,7 @@ function temaDark() {
   botão.style.color = 'white'
 }
 function temaWhite() {
-  atividCadast.style.background = 'white'
-  atividCadast.style.color = 'black'
+  
 
   titulo.style.background = 'black'
   titulo.style.color = 'white'
@@ -958,14 +956,10 @@ function adicionar() {
     } else {
       resetar.addEventListener('click', limpar)
       function limpar() {
-        op1.value = ''
-        op2.value = ''
-        op3.value = ''
-        op4.value = ''
-        op5.value = ''
-        op6.value = ''
-        op7.value = ''
-        op8.value = ''
+        atividCadast.value = ''
+        atividCadast.remove(atividCadast)
+        botdel.remove(botdel)
+        botEdt.remove(botEdt)
         botão.style.visibility = 'visible'
         ativ.value = ''
         ativ.placeholder = 'Atividade'
@@ -1030,7 +1024,7 @@ function adicionar() {
     
         
       })
-      tab.appendChild(botEditSave)
+      //tab.appendChild(botEditSave)
       botEditSave.addEventListener('click', function () {
         atividCadast.disabled = true
        
@@ -1047,7 +1041,7 @@ function adicionar() {
       atividCadast.type = 'text'
       atividCadast.disabled = true
       atividCadast.style.width = '270px'
-      atividCadast.style.marginTop = '30px'
+      atividCadast.style.marginTop = '20px'
       atividCadast.style.fontSize = '10pt'
       if (container.style.background == 'black') {
         atividCadast.style.background = 'black'
@@ -1055,7 +1049,7 @@ function adicionar() {
         atividCadast.style.background = 'white'
       }
       atividCadast.style.borderRadius = '5px'
-      atividCadast.style.marginLeft= '0px'
+      atividCadast.style.marginLeft= '20px'
       atividCadast.style.color = 'black'
       atividCadast.value = ativ.value
 

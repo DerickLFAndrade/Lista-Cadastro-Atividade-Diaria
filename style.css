@@ -1,7 +1,7 @@
 @media screen and (max-width: 862px) {
     #containerPrincipal {
     
-    width: 100%;
+    width: 120vw;
     height: 800px;
     
     position: absolute;
