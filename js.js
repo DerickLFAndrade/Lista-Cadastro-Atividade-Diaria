@@ -29,7 +29,7 @@ var tema2 = document.getElementById('white')
 tema1.addEventListener('click', temaDark)
 tema2.addEventListener('click', temaWhite)
 function temaDark() {
-  
+
 
   titulo.style.background = 'white'
   titulo.style.color = 'black'
@@ -46,7 +46,7 @@ function temaDark() {
   botão.style.color = 'white'
 }
 function temaWhite() {
-  
+
 
   titulo.style.background = 'black'
   titulo.style.color = 'white'
@@ -70,7 +70,7 @@ tema2.addEventListener('click', temaWhite)
 function temaDark() {
   atividCadast.style.background = 'black'
   atividCadast.style.color = 'white'
-  
+
   titulo.style.background = 'white'
   titulo.style.color = 'black'
   titulo.style.boxShadow = '5px 5px 10px rgb(66, 66, 65)'
@@ -88,7 +88,7 @@ function temaDark() {
 function temaWhite() {
   atividCadast.style.background = 'white'
   atividCadast.style.color = 'black'
- 
+
   titulo.style.background = 'black'
   titulo.style.color = 'white'
   titulo.style.boxShadow = '5px 5px 10px white'
@@ -97,13 +97,13 @@ function temaWhite() {
   container.style.background = 'white'
   container2.style.background = 'linear-gradient(black, gray, black)'
   container2.style.boxShadow = '0px 0px 0px white'
- 
+
   resetar.style.background = 'white'
   resetar.style.color = 'black'
   botão.style.background = 'gray'
   botão.style.color = 'black'
   tab.style.background = 'linear-gradient(white, gray, black)'
-  
+
 }
 
 ativ.addEventListener('click', function () {
@@ -120,7 +120,7 @@ function adicionar() {
   if (ativ.value == '') {
     alert('Para cadastrar uma atividade, preencha o campo "Atividade" abaixo e clique em "Cadastrar"')
   } else {
-    if(window.matchMedia("(min-width: 863px)").matches) {
+    if (window.matchMedia("(min-width: 863px)").matches) {
 
       resetar.addEventListener('click', limpar)
       function limpar() {
@@ -975,15 +975,15 @@ function adicionar() {
         botEdt.remove(botEdt)
       }
 
-      
+
       var botdel = document.createElement('button')
       var botEdt = document.createElement('button')
       var botEditSave = document.createElement('button')
       var atividCadast = document.createElement('input')
       botdel.innerHTML = 'X'
-      
-     
-     //deletar tarefa
+
+
+      //deletar tarefa
       botdel.style.background = 'red'
       botdel.style.borderRadius = '5px'
       botdel.style.color = 'black'
@@ -997,7 +997,7 @@ function adicionar() {
         atividCadast.remove(atividCadast)
         botdel.remove(botdel)
         botEdt.remove(botEdt)
-        })
+      })
 
       //editar tarefa 
       botEdt.innerHTML = 'Edit'
@@ -1013,8 +1013,7 @@ function adicionar() {
 
       //Salvar edição
       botEditSave.innerHTML = 'Salvar'
-      botEditSave.style.marginTop = '-4px'
-      botEditSave.style.marginLeft = '7px'
+      
       botEditSave.style.background = 'greenyellow'
       botEditSave.style.borderRadius = '5px'
       botEditSave.style.position = 'absolute'
@@ -1023,40 +1022,52 @@ function adicionar() {
       botEditSave.style.fontSize = '10pt'
       botEditSave.style.width = '50px'
       botEditSave.style.textAlign = 'center'
-     botEditSave.style.padding = '2px'
+      botEditSave.style.padding = '2px'
       botEdt.addEventListener('click', function () {
-        botEdt.appendChild(botEditSave)
-        })
-      
-   
+        atividCadast.disabled = false
+        botão.disabled = true
+        ativ.disabled = true
+    
+        
+      })
+      tab.appendChild(botEditSave)
+      botEditSave.addEventListener('click', function () {
+        atividCadast.disabled = true
+       
+        botão.disabled = false
+        ativ.disabled = false
+        botEditSave.style.marginTop = '0%'
+        botEditSave.style.marginLeft = '0%'
+      })
+
 
       //linha.style.marginLeft = '0%'
-     // linha.style.width = '250px'
-      
+      // linha.style.width = '250px'
+
       atividCadast.type = 'text'
       atividCadast.disabled = true
       atividCadast.style.width = '270px'
-      atividCadast.style.marginTop = '15px'
+      atividCadast.style.marginTop = '30px'
       atividCadast.style.fontSize = '10pt'
-      if(container.style.background == 'black') {
+      if (container.style.background == 'black') {
         atividCadast.style.background = 'black'
       } else {
         atividCadast.style.background = 'white'
       }
       atividCadast.style.borderRadius = '5px'
-      
+      atividCadast.style.marginLeft= '0px'
       atividCadast.style.color = 'black'
       atividCadast.value = ativ.value
-      
+
       //tab.appendChild(tabela)
       //tabela.appendChild(linha)
       tab.appendChild(atividCadast)
       tab.appendChild(botdel)
       tab.appendChild(botEdt)
     }
-  
-    }
-  } 
+
+  }
+}
 botão.addEventListener('click', adicionar)
 
 
