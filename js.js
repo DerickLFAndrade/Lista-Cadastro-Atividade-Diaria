@@ -2,22 +2,8 @@ var ativ = document.getElementById('ativ')
 var titulo = document.getElementById('titulo2')
 var botão = document.getElementById('botão')
 var op1 = document.getElementById('opçãot1')
-var op2 = document.getElementById('opçãot2')
-var op3 = document.getElementById('opçãot3')
-var op4 = document.getElementById('opçãot4')
-var op5 = document.getElementById('opçãot5')
-var op6 = document.getElementById('opçãot6')
-var op7 = document.getElementById('opçãot7')
-var op8 = document.getElementById('opçãot8')
-var op1d = document.getElementById('opção1')
-var op2d = document.getElementById('opção2')
-var op3d = document.getElementById('opção3')
-var op4d = document.getElementById('opção4')
-var op5d = document.getElementById('opção5')
-var op6d = document.getElementById('opção6')
-var op7d = document.getElementById('opção7')
-var op8d = document.getElementById('opção8')
-var inps = document.getElementsByClassName('inps')
+
+
 var tab = document.getElementById('tabela')
 var resetar = document.getElementById('resetar')
 var container = document.getElementById('containerPrincipal')
@@ -25,6 +11,7 @@ var container2 = document.getElementById('containerSecundario')
 
 var tema1 = document.getElementById('dark')
 var tema2 = document.getElementById('white')
+var padrão = document.getElementById('padrão')
 
 
 tema1.addEventListener('click', temaDark)
@@ -65,45 +52,25 @@ function temaWhite() {
   tab.style.background = 'linear-gradient(white, gray, black)'
 
 }
+function temaPadrão() {
+  titulo.style.background = 'rgb(139, 194, 29)'
+  titulo.style.color = 'white'
+  titulo.style.boxShadow = '5px 5px 10px rgb(139, 194, 29)'
+  ativ.style.background = 'white'
+  ativ.style.color = 'black'
+  container.style.background = 'lightgreen'
+  container2.style.background = 'linear-gradient(rgb(31, 46, 31), gray, green)'
+  container2.style.boxShadow = '0px 0px 2px white'
+  tab.style.background = 'linear-gradient(rgb(77, 88, 77), gray, green)'
+  resetar.style.background = 'greenyellow'
+  resetar.style.color = 'rgb(65, 60, 60)'
+  botão.style.background = 'rgb(59, 56, 56)'
+  botão.style.color = 'rgb(212, 201, 201)'
+}
 
 tema1.addEventListener('click', temaDark)
 tema2.addEventListener('click', temaWhite)
-function temaDark() {
-  
-
-  titulo.style.background = 'white'
-  titulo.style.color = 'black'
-  titulo.style.boxShadow = '5px 5px 10px rgb(66, 66, 65)'
-  ativ.style.background = 'black'
-  ativ.style.color = 'white'
-  container.style.background = 'black'
-  container2.style.background = 'linear-gradient(black, gray, white)'
-  container2.style.boxShadow = '0px 0px 2px white'
-  tab.style.background = 'gray'
-  resetar.style.background = 'gray'
-  resetar.style.color = 'white'
-  botão.style.background = 'black'
-  botão.style.color = 'white'
-}
-function temaWhite() {
-  
-
-  titulo.style.background = 'black'
-  titulo.style.color = 'white'
-  titulo.style.boxShadow = '5px 5px 10px white'
-  ativ.style.background = 'white'
-  ativ.style.color = 'black'
-  container.style.background = 'white'
-  container2.style.background = 'linear-gradient(black, gray, black)'
-  container2.style.boxShadow = '0px 0px 0px white'
-
-  resetar.style.background = 'white'
-  resetar.style.color = 'black'
-  botão.style.background = 'gray'
-  botão.style.color = 'black'
-  tab.style.background = 'linear-gradient(white, gray, black)'
-
-}
+padrão.addEventListener('click', temaPadrão)
 
 ativ.addEventListener('click', function () {
   if (ativ.value == 'Atividade') {
@@ -1051,14 +1018,12 @@ function adicionar() {
       atividCadast.style.width = '270px'
       atividCadast.style.marginTop = '20px'
       atividCadast.style.fontSize = '10pt'
-      if (container.style.background == 'black') {
-        atividCadast.style.background = 'black'
-      } else {
-        atividCadast.style.background = 'white'
-      }
+      atividCadast.style.background = 'white'
       atividCadast.style.borderRadius = '5px'
       atividCadast.style.marginLeft= '10px'
       atividCadast.style.color = 'black'
+      atividCadast.style.fontFamily = 'Space'
+      atividCadast.style.fontWeight = 'bold'
       atividCadast.value = ativ.value
 
       //tab.appendChild(tabela)

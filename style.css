@@ -1,22 +1,24 @@
 @media screen and (max-width: 862px) {
+  
     #containerPrincipal {
     
-    width: 100vw;
+    width: 400px;
     height: 800px;
-    
-    position: absolute;
+    margin: 0%;
+    background: lightgreen;
+  
 }
 
 #containerSecundario {
-   width: 390px;
+   width: 375px;
    height: 200px;
-  margin-top: 5px;
   border-radius: 10px;
-    background: linear-gradient(rgb(31, 46, 31), gray, green);
-      font-style:oblique ;
-      box-shadow:0px 2px 5px lightgreen;
+  background: linear-gradient(rgb(31, 46, 31), gray, green);
+  font-style:oblique ;
+  box-shadow:0px 2px 5px lightgreen;
     margin: 0%;
-    margin-top: 5%;
+    
+    
       
 
 }
@@ -26,29 +28,40 @@
 #seletor {
     
   
-    width: 380px;
+    width: 375px;
     height: 10px;
-    margin-left: 25px;
+    margin-left: 50%;
+    transform: translate(-35%);
     font-size: 15pt;
     margin-top: 15px;
 }
-#dark {
-    font-size: 12pt;
+#dark button{
+    font-size: 9pt;
     background: black;
     color: white;
     cursor: pointer;
     font-weight: bold;
-    box-shadow:0px 0px 5px 8px black;
+    box-shadow:0px 0px 5px 3px black;
 }
-#white {
-    font-size: 12pt;
+#white button{
+    font-size: 9pt;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 150px;
+    margin-left: 10px;
     background: white;
     color: black;
-    box-shadow:0px 0px 5px 8px white;
-    border: none;
+    box-shadow:0px 0px 5px 3px white;
+    
+}
+#padrão button {
+    margin-left: 20px;
+   font-size: 6pt;
+    background: greenyellow;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow:0px 0px 5px 3px greenyellow;
+}
 }
 
 #titulo2 {
@@ -60,7 +73,7 @@
    
     background: rgb(139, 194, 29);
     border-radius: 5px;
-    width: 380px;
+    width: 350px;
     box-shadow:  5px 5px 10px rgb(139, 194, 29);
     color: white;
     
@@ -69,7 +82,7 @@
 
 #titulo2 h2 {
 
-font-size:30pt;
+font-size:25pt;
 }
 #botão {
     position: absolute;
@@ -115,7 +128,8 @@ font-size:30pt;
     margin-top: 60px;
     border: none;
     box-shadow:  3px 3px 7px rgb(134, 134, 134);
-    font-style:oblique ;
+   font-weight: bold;
+   font-family: space ;
     font-size: 10pt;
     width: 350px;
     height: 20px;
@@ -126,7 +140,7 @@ font-size:30pt;
 
 #tabela {
    display: inline-block;
-    width: 390px;
+    width: 375px;
     height: 500px;
     overflow: hidden;
     
@@ -147,28 +161,9 @@ font-size:30pt;
 
 
 
-#opçãot1, #opçãot2, #opçãot3, #opçãot4, #opçãot5, #opçãot6, #opçãot7, #opçãot8 {
-   visibility: hidden;
-    height: 2vw;
-   border-radius: 10px;
-    font-size: 12pt;
-    margin-top: 3vw;
-    margin-left: 1vw;
-    color: black;
-    font-weight: bold;
-    font-style: monospace;
-    text-align: left;
-    width: 270px;
-    height: 25px;
-    background: none;
-   
-} 
-.inps {
-    background-color: white;
-}
 
 
-}
+
 @media screen and (min-width: 863px ) {
     #containerPrincipal {
     
