@@ -21,23 +21,14 @@ html, body {
   background: linear-gradient(rgb(31, 46, 31), gray, green);
   font-style:oblique ;
   box-shadow:0px 2px 5px lightgreen;
-    margin: 0%;
-    
-    
-    
-      
-
+    margin: 0%; 
 }
 .content {
     padding: 7vw;
 }
 #seletor {
-    
-  
-   
     height: 10px;
     margin-left: 10px;
-    
     font-size: 15pt;
     margin-top: 15px;
 }
@@ -161,73 +152,73 @@ font-size:25pt;
     background: linear-gradient(rgb(77, 88, 77), gray, green);
     
 }
-#tab option {
-    margin-top: 12px;
-}
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 863px ) {
     #containerPrincipal {
     
-    width: 100vw;
+    width: 110vw;
     height: 100vw;
     margin-left: 50%;
     margin-top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    background: lightgreen;
 }
 
 #containerSecundario {
-   width: 50vw;
-   height: 140px;
+   width: 60vw;
+   height: 200px;
   margin-top: 50px;
   border-radius: 10px;
-    background: linear-gradient(rgb(31, 46, 31), gray, green);
-      font-style:oblique ;
-      box-shadow:0px 2px 5px lightgreen;
+   border-radius: 10px;
+  background: linear-gradient(rgb(31, 46, 31), gray, green);
+  font-style:oblique ;
+  box-shadow:0px 2px 5px lightgreen;
 }
 .content {
     padding: 7vw;
 }
 #seletor {
-    
-  
     width: 50vw;
     height: 10px;
-    
     font-size: 15pt;
-    margin-top: -85px;
+    margin-top: -200px;
+    margin-left:75%;
+    transform: translate(-50%);
+    
 }
-#dark {
-    font-size: 1.2vw;
+#dark button{
+    font-size: 1vw;
     background: black;
     color: white;
     cursor: pointer;
     font-weight: bold;
-    box-shadow:0px 0px 5px 8px black;
+    box-shadow:0px 0px 5px 3px black;
+    margin-left: -20%;
 }
-#white {
-    font-size: 1.2vw;
+#white button{
+    font-size: 1vw;
     font-weight: bold;
     cursor: pointer;
-    margin-left: 35vw;
+    margin-left: 18%;
     background: white;
     color: black;
-    box-shadow:0px 0px 5px 8px white;
-    border: none;
+    box-shadow:0px 0px 5px 3px white;
+}
+#padrão button {
+  
+    margin-top: 100px;
+   font-size: 1vw;
+    background: chartreuse;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow:0px 0px 5px 3px chartreuse;
+    margin-left: 20%;
+
 }
 
 #titulo2 {
@@ -237,11 +228,11 @@ font-size:25pt;
     margin-left: 50%;
     transform: translate(-50%);
    
-    background: rgb(139, 194, 29);
+    background: chartreuse;
     border-radius: 5px;
     width: 30vw;
-    box-shadow:  5px 5px 10px rgb(139, 194, 29);
-    color: white;
+    box-shadow:  0px 5px 3px rgb(178, 243, 114);
+    color: rgb(65, 60, 60);
     
     
 }
@@ -262,24 +253,45 @@ font-size:3vw;
    border: none;
     height:30px;   
     width: 9.7w; 
-    
+    color: chartreuse;
+}
+
+#resetar{
+    border: none;
+    font-style:monospace ;
+    border-radius: 5px;  
+    text-align: center;
+     font-style:oblique ;
+    border-radius: 5px;  
+    text-align: center;
+    color: rgb(65, 60, 60);
+    background: chartreuse;
+    font-size: 1.1vw;
+    box-shadow:  0px  0px 8px rgb(105, 179, 136);
+    margin-left: 1px;
+   
+    height: 30px;
+   
+    width: 9.7vw;
+    font-weight: bold;
 }
 #ativ {
-    margin-top: 20px;
+    margin-top: 80px;
     border: none;
     box-shadow:  3px 3px 7px rgb(134, 134, 134);
     font-style:oblique ;
     font-size: 1.1vw;
-    width: 25vw;
-    height: 4vh;
+    width: 38vw;
+    height: 25px;
     border-radius: 10px;
+    background: rgb(210, 236, 183);
    
 }
 
 
 #tabela {
    display: inline-block;
-    width: 50vw;
+    width: 60vw;
     height: 50vw;
     overflow: hidden;
     margin-top: 25vw;
@@ -290,215 +302,4 @@ font-size:3vw;
     background: linear-gradient(rgb(77, 88, 77), gray, green);
     
 }
-#tab option {
-    margin-top: 12px;
-}
-
-
-
-
-#opção1 {
-    width: 35vw;
-}
-
-
-#opçãot1, #opçãot2, #opçãot3, #opçãot4, #opçãot5, #opçãot6, #opçãot7, #opçãot8 {
-   
-    height: 2vw;
-   border-radius: 10px;
-    font-size: 1.8vw;
-    margin-top: 3vw;
-    margin-left: 1vw;
-    color: black;
-    font-weight: bold;
-    font-style: monospace;
-    text-align: left;
-    width: 35vw;
-    background: none;
-   
-} 
-.inps {
-    background-color: white;
-}
-#resetar{
-    border: none;
-    font-style:monospace ;
-    border-radius: 5px;  
-    text-align: center;
-     font-style:oblique ;
-    border-radius: 5px;  
-    text-align: center;
-    color: rgb(65, 60, 60);
-    background: greenyellow;
-    font-size: 1.1vw;
-    box-shadow:  0px  0px 8px rgb(105, 179, 136);
-    margin-left: 1px;
-   
-    height: 30px;
-   
-    width: 9.7vw;
-    font-weight: bold;
-}
-
-#containerPrincipal {
-    
-    width: 100vw;
-    height: 100vw;
-    margin-left: 50%;
-    margin-top: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-#containerSecundario {
-   width: 50vw;
-   height: 140px;
-  margin-top: 50px;
-  border-radius: 10px;
-    background: linear-gradient(rgb(31, 46, 31), gray, green);
-      font-style:oblique ;
-      box-shadow:0px 2px 5px lightgreen;
-}
-.content {
-    padding: 7vw;
-}
-#seletor {
-    
-  
-    width: 50vw;
-    height: 10px;
-    
-    font-size: 15pt;
-    margin-top: -85px;
-}
-#dark {
-    font-size: 1.2vw;
-    background: black;
-    color: white;
-    cursor: pointer;
-    font-weight: bold;
-    box-shadow:0px 0px 5px 8px black;
-}
-#white {
-    font-size: 1.2vw;
-    font-weight: bold;
-    cursor: pointer;
-    margin-left: 35vw;
-    background: white;
-    color: black;
-    box-shadow:0px 0px 5px 8px white;
-    border: none;
-}
-
-#titulo2 {
-    text-align: center;
-    font-style:oblique ;
-  
-    margin-left: 50%;
-    transform: translate(-50%);
-   
-    background: rgb(139, 194, 29);
-    border-radius: 5px;
-    width: 30vw;
-    box-shadow:  5px 5px 10px rgb(139, 194, 29);
-    color: white;
-    
-    
-}
-
-#titulo2 h2 {
-
-font-size:3vw;
-}
-#botão {
-    
-      font-style:oblique ;
-    border-radius: 5px;  
-    text-align: center;
-    color: rgb(212, 201, 201);
-    background: rgb(59, 56, 56);
-    font-size: 1.1vw;
-    box-shadow:  0px 0px 5px rgb(134, 134, 134);
-   border: none;
-    height:30px;   
-    width: 9.7w; 
-    
-}
-#ativ {
-    margin-top: 20px;
-    border: none;
-    box-shadow:  3px 3px 7px rgb(134, 134, 134);
-    font-style:oblique ;
-    font-size: 1.1vw;
-    width: 25vw;
-    height: 4vh;
-    border-radius: 10px;
-   
-}
-
-
-#tabela {
-   display: inline-block;
-    width: 50vw;
-    height: 50vw;
-    overflow: hidden;
-    margin-top: 25vw;
-    margin-left: 50%;
-    transform: translate(-50%, -40%);
-    border-radius: 10px;
-   
-    background: linear-gradient(rgb(77, 88, 77), gray, green);
-    
-}
-#tab option {
-    margin-top: 12px;
-}
-
-
-
-
-#opção1 {
-    width: 35vw;
-}
-
-
-#opçãot1, #opçãot2, #opçãot3, #opçãot4, #opçãot5, #opçãot6, #opçãot7, #opçãot8 {
-   
-    height: 2vw;
-   border-radius: 10px;
-    font-size: 1.8vw;
-    margin-top: 3vw;
-    margin-left: 1vw;
-    color: black;
-    font-weight: bold;
-    font-style: monospace;
-    text-align: left;
-    width: 35vw;
-    background: none;
-   
-} 
-.inps {
-    background-color: white;
-}
-#resetar{
-    border: none;
-    font-style:monospace ;
-    border-radius: 5px;  
-    text-align: center;
-     font-style:oblique ;
-    border-radius: 5px;  
-    text-align: center;
-    color: rgb(65, 60, 60);
-    background: greenyellow;
-    font-size: 1.1vw;
-    box-shadow:  0px  0px 8px rgb(105, 179, 136);
-    margin-left: 1px;
-   
-    height: 30px;
-   
-    width: 9.7vw;
-    font-weight: bold;
-}
-
-
 }

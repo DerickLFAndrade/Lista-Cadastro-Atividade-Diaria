@@ -74,14 +74,13 @@ tema1.addEventListener('click', temaDark)
 tema2.addEventListener('click', temaWhite)
 padrão.addEventListener('click', temaPadrão)
 
+ativ.style.textIndent = '10px'
 ativ.addEventListener('click', function () {
   if (ativ.value == 'Atividade') {
     ativ.value = ''
     ativ.focus
   }
 })
-
-
 
 
 function adicionar() {
@@ -92,32 +91,31 @@ function adicionar() {
   } else {
    ativ.value = ''
    ativ.placeHolder = 'Aividade'
-    if (window.matchMedia("(min-width: 863px)").matches) {
+
+   //Só executa esse bloco de código no tamanho mínimo de 863px
+    if (window.matchMedia("(min-width: 601px)").matches) {
       resetar.addEventListener('click', limpar)
       function limpar() {
         atividCadast.value = ''
-        atividCadast.remove(atividCadast)
-        botdel.remove(botdel)
-        botEdt.remove(botEdt)
+        lista.remove(lista)
         botão.style.visibility = 'visible'
         ativ.value = ''
         ativ.placeholder = 'Atividade'
         ativ.disabled = false
         botão.disabled = false
-        botdel.remove(botdel)
-        botEdt.remove(botEdt)
+        
       }
 
 
       var botdel = document.createElement('button')
       var botEdt = document.createElement('button')
-
-
+      var lista = document.createElement('li')
+      var listaOrd = document.getElementById('ordenada')
       var atividCadast = document.createElement('input')
       botdel.innerHTML = 'X'
 
       var botEditSave = document.createElement('button')
-      atividCadast.appendChild(botEditSave)
+     
       //Salvar edição
 
 
@@ -134,7 +132,7 @@ function adicionar() {
       botdel.addEventListener('click', function () {
         var excluir = confirm('Você realmente deseja excluir esse item?')
         if (excluir == true) {
-          atividCadast.remove(atividCadast)
+          lista.remove(lista)
           botdel.remove(botdel)
           botEdt.remove(botEdt)
         }
@@ -174,16 +172,13 @@ function adicionar() {
         botEditSave.style.visibility = 'visible'
         botEditSave.style.background = 'greenyellow'
         botEditSave.style.borderRadius = '5px'
-        botEditSave.style.position = 'absolute'
         botEditSave.style.color = 'black'
         botEditSave.style.fontWeight = 'bold'
         botEditSave.style.fontSize = '10pt'
         botEditSave.style.width = '50px'
         botEditSave.style.textAlign = 'center'
         botEditSave.style.padding = '2px'
-        botEditSave.style.marginTop = '50px'
-        botEditSave.style.marginLeft = '-318px'
-        tab.appendChild(botEditSave)
+        lista.appendChild(botEditSave)
 
       })
 
@@ -201,11 +196,10 @@ function adicionar() {
 
 
 
-
+      
       atividCadast.type = 'text'
       atividCadast.disabled = true
-
-      atividCadast.style.width = '240px'
+      atividCadast.style.width = '35vw'
       atividCadast.style.marginTop = '20px'
       atividCadast.style.fontSize = '10pt'
       atividCadast.style.background = 'white'
@@ -214,36 +208,35 @@ function adicionar() {
       atividCadast.style.color = 'black'
       atividCadast.style.fontFamily = 'Space'
       atividCadast.style.fontWeight = 'bold'
+      atividCadast.style.textIndent = '10px'
       atividCadast.value = valueAtiv
 
-      //tab.appendChild(tabela)
-      //tabela.appendChild(linha)
-      tab.appendChild(atividCadast)
-      tab.appendChild(botdel)
-      tab.appendChild(botEdt)
-    
+      
+      lista.appendChild(atividCadast)
+      lista.appendChild(botdel)
+      lista.appendChild(botEdt)
+      listaOrd.appendChild(lista)
+      
 
-    } else {
+    } else if (window.matchMedia("(max-width: 600px)").matches){
       resetar.addEventListener('click', limpar)
       function limpar() {
         atividCadast.value = ''
-        atividCadast.remove(atividCadast)
-        botdel.remove(botdel)
-        botEdt.remove(botEdt)
+        lista.remove(lista)
         botão.style.visibility = 'visible'
         ativ.value = ''
         ativ.placeholder = 'Atividade'
         ativ.disabled = false
         botão.disabled = false
-        botdel.remove(botdel)
-        botEdt.remove(botEdt)
+        
       }
 
 
       var botdel = document.createElement('button')
       var botEdt = document.createElement('button')
       
-
+      var lista = document.createElement('li')
+      var listaOrd = document.getElementById('ordenada')
       var atividCadast = document.createElement('input')
       botdel.innerHTML = 'X'
 
@@ -265,7 +258,7 @@ function adicionar() {
       botdel.addEventListener('click', function () {
         var excluir = confirm('Você realmente deseja excluir esse item?')
         if(excluir == true) {
-          atividCadast.remove(atividCadast)
+          lista.remove(lista)
           botdel.remove(botdel)
           botEdt.remove(botEdt)
         }
@@ -305,16 +298,17 @@ function adicionar() {
         botEditSave.style.visibility = 'visible'
         botEditSave.style.background = 'greenyellow'
         botEditSave.style.borderRadius = '5px'
-        botEditSave.style.position = 'absolute'
+        //botEditSave.style.position = 'absolute'
         botEditSave.style.color = 'black'
         botEditSave.style.fontWeight = 'bold'
         botEditSave.style.fontSize = '10pt'
         botEditSave.style.width = '50px'
         botEditSave.style.textAlign = 'center'
         botEditSave.style.padding = '2px'
-        botEditSave.style.marginTop = '50px'
-        botEditSave.style.marginLeft = '-318px'
-        tab.appendChild(botEditSave)
+        botEditSave.style.marginTop = '-28px'
+       // botEditSave.style.display = 'block'
+       botEditSave.style.marginLeft = ''
+        lista.appendChild(botEditSave)
         
       })
       
@@ -336,7 +330,7 @@ function adicionar() {
       atividCadast.type = 'text'
       atividCadast.disabled = true
      
-      atividCadast.style.width = '240px'
+      atividCadast.style.width = '35vw'
       atividCadast.style.marginTop = '20px'
       atividCadast.style.fontSize = '10pt'
       atividCadast.style.background = 'white'
@@ -347,11 +341,11 @@ function adicionar() {
       atividCadast.style.fontWeight = 'bold'
       atividCadast.value = valueAtiv
 
-      //tab.appendChild(tabela)
-      //tabela.appendChild(linha)
-      tab.appendChild(atividCadast)
-      tab.appendChild(botdel)
-      tab.appendChild(botEdt)
+      lista.appendChild(atividCadast)
+      lista.appendChild(botdel)
+      lista.appendChild(botEdt)
+      // atividCadast.appendChild(botEditSave)
+      listaOrd.appendChild(lista)
     }
 
   }
