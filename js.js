@@ -29,7 +29,7 @@ function temaDark() {
   container2.style.boxShadow = '0px 0px 2px white'
   tab.style.background = 'gray'
   resetar.style.background = 'gray'
-  resetar.style.color = 'white'
+  resetar.style.color = 'black'
   botão.style.background = 'black'
   botão.style.color = 'white'
 }
@@ -48,24 +48,24 @@ function temaWhite() {
   resetar.style.background = 'white'
   resetar.style.color = 'black'
   botão.style.background = 'gray'
-  botão.style.color = 'black'
+  botão.style.color = 'white'
   tab.style.background = 'linear-gradient(white, gray, black)'
 
 }
 function temaPadrão() {
-  titulo.style.background = 'rgb(139, 194, 29)'
-  titulo.style.color = 'white'
-  titulo.style.boxShadow = '5px 5px 10px rgb(139, 194, 29)'
+  titulo.style.background = 'chartreuse'
+  titulo.style.color = 'rgb(65, 60, 60)'
+  titulo.style.boxShadow = '0px 5px 3px rgb(178, 243, 114)'
   ativ.style.background = 'rgb(210, 236, 183)'
   ativ.style.color = 'black'
   container.style.background = 'lightgreen'
   container2.style.background = 'linear-gradient(rgb(31, 46, 31), gray, green)'
   container2.style.boxShadow = '0px 0px 2px white'
   tab.style.background = 'linear-gradient(rgb(77, 88, 77), gray, green)'
-  resetar.style.background = 'greenyellow'
+  resetar.style.background = 'chartreuse'
   resetar.style.color = 'rgb(65, 60, 60)'
   botão.style.background = 'rgb(59, 56, 56)'
-  botão.style.color = 'rgb(212, 201, 201)'
+  botão.style.color = 'chartreuse'
 }
 
 tema1.addEventListener('click', temaDark)
@@ -982,6 +982,18 @@ function adicionar() {
      
       botEdt.addEventListener('click', function () {
         atividCadast.disabled = false
+        if (container.style.background == 'black') {
+          atividCadast.style.background = 'black'
+          atividCadast.style.color = 'white'
+        } else if (container.style.background == 'white') {
+          atividCadast.style.background = 'gray'
+          atividCadast.style.color = 'white'
+        } else {
+          atividCadast.style.background = 'chartreuse'
+          atividCadast.style.color = 'black'
+        }
+       
+        atividCadast.focus()
         botão.disabled = true
         ativ.disabled = true
         botEditSave.innerHTML = 'Salvar'
@@ -1003,6 +1015,10 @@ function adicionar() {
       
      botEditSave.addEventListener('click', function () {
         atividCadast.disabled = true
+        atividCadast.style.background = 'white'
+        atividCadast.style.color = 'black'
+        
+       
        botEditSave.style.visibility = 'hidden'
       botão.disabled = false
        ativ.disabled = false
