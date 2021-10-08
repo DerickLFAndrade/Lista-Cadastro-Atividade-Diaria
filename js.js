@@ -83,10 +83,13 @@ ativ.addEventListener('click', function () {
 
 
 function adicionar() {
- 
-  if (ativ.value == '') {
-    alert('Para cadastrar uma atividade, preencha o campo "Atividade" abaixo e clique em "Cadastrar"')
+  var valueAtiv = ativ.value
+  if (valueAtiv == '') {
+    alert('Para cadastrar uma atividade, preencha o campo "Atividade" abaixo e clique em "Cadastrar"') 
+    
   } else {
+   ativ.value = ''
+   ativ.placeHolder = 'Aividade'
     if (window.matchMedia("(min-width: 863px)").matches) {
 
       resetar.addEventListener('click', limpar)
@@ -1008,7 +1011,7 @@ function adicionar() {
         botEditSave.style.textAlign = 'center'
         botEditSave.style.padding = '2px'
         botEditSave.style.marginTop = '50px'
-        botEditSave.style.marginLeft = '-345px'
+        botEditSave.style.marginLeft = '-318px'
         tab.appendChild(botEditSave)
         
       })
@@ -1031,7 +1034,7 @@ function adicionar() {
       atividCadast.type = 'text'
       atividCadast.disabled = true
      
-      atividCadast.style.width = '270px'
+      atividCadast.style.width = '240px'
       atividCadast.style.marginTop = '20px'
       atividCadast.style.fontSize = '10pt'
       atividCadast.style.background = 'white'
@@ -1040,7 +1043,7 @@ function adicionar() {
       atividCadast.style.color = 'black'
       atividCadast.style.fontFamily = 'Space'
       atividCadast.style.fontWeight = 'bold'
-      atividCadast.value = ativ.value
+      atividCadast.value = valueAtiv
 
       //tab.appendChild(tabela)
       //tabela.appendChild(linha)

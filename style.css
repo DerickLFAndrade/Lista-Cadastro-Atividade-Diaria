@@ -1,8 +1,8 @@
 @media screen and (max-width: 862px) {
-  
+
     #containerPrincipal {
-    
-    width: 465px;
+    position: absolute;
+    width: 430px;
     height: 800px;
     margin: 0%;
     background: lightgreen;
@@ -10,7 +10,7 @@
 }
 
 #containerSecundario {
-   width: 420px;
+   width: 340px;
    height: 200px;
   border-radius: 10px;
   background: linear-gradient(rgb(31, 46, 31), gray, green);
@@ -73,7 +73,7 @@
    
     background: chartreuse;
     border-radius: 5px;
-    width: 350px;
+    width: 320px;
     box-shadow:  0px 5px 3px rgb(178, 243, 114);
     color: rgb(65, 60, 60);
     
@@ -116,7 +116,7 @@ font-size:25pt;
     background: chartreuse;
     font-size: 10pt;
     box-shadow:  0px  0px 8px rgb(105, 179, 136);
-    margin-left: 270px;
+    margin-left: 200px;
     margin-top: 100px;
    height:22px;   
     width: 100px; 
@@ -131,11 +131,11 @@ font-size:25pt;
    font-weight: bold;
    font-family: space ;
     font-size: 10pt;
-    width: 350px;
+    width: 300px;
     height: 20px;
     border-radius: 10px;
     background: rgb(210, 236, 183);
-    margin-left: 20px;
+    margin-left: 10px;
     text-indent: 10px;
     
     
@@ -145,7 +145,7 @@ font-size:25pt;
 
 #tabela {
    display: inline-block;
-    width: 420px;
+    width: 340px;
     height: 500px;
     overflow: hidden;
     
