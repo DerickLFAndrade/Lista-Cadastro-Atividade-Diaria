@@ -8,7 +8,7 @@ html, body {
       
     position: absolute;
     width: 390px;
-    height: 800px;
+    height: 160vh;
     margin: 0%;
     background: lightgreen;
   
@@ -69,7 +69,6 @@ html, body {
     font-weight: bold;
     box-shadow:0px 0px 5px 3px chartreuse;
 }
-}
 
 #titulo2 {
     text-align: center;
@@ -86,7 +85,6 @@ html, body {
     
     
 }
-
 #titulo2 h2 {
 
 font-size:25pt;
@@ -166,6 +164,11 @@ font-size:25pt;
 #tab option {
     margin-top: 12px;
 }
+
+}
+
+
+
 
 
 
