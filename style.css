@@ -2,7 +2,7 @@
   
     #containerPrincipal {
     
-    width: 400px;
+    width: 465px;
     height: 800px;
     margin: 0%;
     background: lightgreen;
@@ -10,7 +10,7 @@
 }
 
 #containerSecundario {
-   width: 375px;
+   width: 420px;
    height: 200px;
   border-radius: 10px;
   background: linear-gradient(rgb(31, 46, 31), gray, green);
@@ -97,6 +97,7 @@ font-size:25pt;
     height:22px;   
     width: 100px;
     margin-top: 100px;
+    margin-left: 20px;
     color: chartreuse;
    
     
@@ -115,7 +116,7 @@ font-size:25pt;
     background: chartreuse;
     font-size: 10pt;
     box-shadow:  0px  0px 8px rgb(105, 179, 136);
-    margin-left: 250px;
+    margin-left: 270px;
     margin-top: 100px;
    height:22px;   
     width: 100px; 
@@ -134,6 +135,8 @@ font-size:25pt;
     height: 20px;
     border-radius: 10px;
     background: rgb(210, 236, 183);
+    margin-left: 20px;
+    text-indent: 10px;
     
     
    
@@ -142,7 +145,7 @@ font-size:25pt;
 
 #tabela {
    display: inline-block;
-    width: 375px;
+    width: 420px;
     height: 500px;
     overflow: hidden;
     
