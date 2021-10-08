@@ -30,6 +30,7 @@ function temaDark() {
   tab.style.background = 'gray'
   resetar.style.background = 'gray'
   resetar.style.color = 'black'
+  resetar.style.boxShadow = 'none'
   botão.style.background = 'black'
   botão.style.color = 'white'
 }
@@ -44,7 +45,7 @@ function temaWhite() {
   container.style.background = 'white'
   container2.style.background = 'linear-gradient(black, gray, black)'
   container2.style.boxShadow = '0px 0px 0px white'
-
+  resetar.style.boxShadow = 'none'
   resetar.style.background = 'white'
   resetar.style.color = 'black'
   botão.style.background = 'gray'
@@ -64,6 +65,7 @@ function temaPadrão() {
   tab.style.background = 'linear-gradient(rgb(77, 88, 77), gray, green)'
   resetar.style.background = 'chartreuse'
   resetar.style.color = 'rgb(65, 60, 60)'
+  resetar.style.boxShadow = '0px  0px 8px rgb(105, 179, 136)'
   botão.style.background = 'rgb(59, 56, 56)'
   botão.style.color = 'chartreuse'
 }
