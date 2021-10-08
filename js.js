@@ -199,7 +199,7 @@ function adicionar() {
       
       atividCadast.type = 'text'
       atividCadast.disabled = true
-      atividCadast.style.width = '35vw'
+      atividCadast.style.width = '38vw'
       atividCadast.style.marginTop = '20px'
       atividCadast.style.fontSize = '10pt'
       atividCadast.style.background = 'white'
@@ -250,7 +250,7 @@ function adicionar() {
       botdel.style.borderRadius = '5px'
       botdel.style.color = 'black'
       botdel.style.fontWeight = 'bold'
-      botdel.style.fontSize = '10pt'
+      botdel.style.fontSize = '8pt'
       botdel.style.padding = '2px'
       botdel.style.width = '35px'
       botdel.style.textAlign = 'center'
@@ -272,7 +272,7 @@ function adicionar() {
       botEdt.style.fontWeight = 'bold'
       botEdt.style.width = '40px'
       botEdt.style.textAlign = 'center'
-      botEdt.style.fontSize = '10pt'
+      botEdt.style.fontSize = '8pt'
       botEdt.style.padding = '2px'
       botEdt.style.background = 'none'
       
@@ -301,7 +301,7 @@ function adicionar() {
         //botEditSave.style.position = 'absolute'
         botEditSave.style.color = 'black'
         botEditSave.style.fontWeight = 'bold'
-        botEditSave.style.fontSize = '10pt'
+        botEditSave.style.fontSize = '8pt'
         botEditSave.style.width = '50px'
         botEditSave.style.textAlign = 'center'
         botEditSave.style.padding = '2px'
@@ -330,9 +330,9 @@ function adicionar() {
       atividCadast.type = 'text'
       atividCadast.disabled = true
      
-      atividCadast.style.width = '35vw'
+      atividCadast.style.width = '165px'
       atividCadast.style.marginTop = '20px'
-      atividCadast.style.fontSize = '10pt'
+      atividCadast.style.fontSize = '8pt'
       atividCadast.style.background = 'white'
       atividCadast.style.borderRadius = '5px'
       atividCadast.style.marginLeft= '10px'
