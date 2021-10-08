@@ -26,6 +26,7 @@ var container2 = document.getElementById('containerSecundario')
 var tema1 = document.getElementById('dark')
 var tema2 = document.getElementById('white')
 
+
 tema1.addEventListener('click', temaDark)
 tema2.addEventListener('click', temaWhite)
 function temaDark() {
@@ -115,6 +116,7 @@ ativ.addEventListener('click', function () {
 
 
 function adicionar() {
+ 
   if (ativ.value == '') {
     alert('Para cadastrar uma atividade, preencha o campo "Atividade" abaixo e clique em "Cadastrar"')
   } else {
@@ -972,10 +974,15 @@ function adicionar() {
 
       var botdel = document.createElement('button')
       var botEdt = document.createElement('button')
-      var botEditSave = document.createElement('button')
+      
+
       var atividCadast = document.createElement('input')
       botdel.innerHTML = 'X'
 
+      var botEditSave = document.createElement('button')
+      atividCadast.appendChild(botEditSave)
+      //Salvar edição
+  
 
       //deletar tarefa
       botdel.style.background = 'red'
@@ -1003,43 +1010,44 @@ function adicionar() {
       botEdt.style.fontSize = '10pt'
       botEdt.style.padding = '2px'
       botEdt.style.background = 'none'
-
-
-      //Salvar edição
-      botEditSave.innerHTML = 'Salvar'
       
-      botEditSave.style.background = 'greenyellow'
-      botEditSave.style.borderRadius = '5px'
-      botEditSave.style.position = 'absolute'
-      botEditSave.style.color = 'black'
-      botEditSave.style.fontWeight = 'bold'
-      botEditSave.style.fontSize = '10pt'
-      botEditSave.style.width = '50px'
-      botEditSave.style.textAlign = 'center'
-      botEditSave.style.padding = '2px'
+
+     
       botEdt.addEventListener('click', function () {
         atividCadast.disabled = false
         botão.disabled = true
         ativ.disabled = true
-    
+        botEditSave.innerHTML = 'Salvar'
+        botEditSave.style.visibility = 'visible'
+        botEditSave.style.background = 'greenyellow'
+        botEditSave.style.borderRadius = '5px'
+        botEditSave.style.position = 'absolute'
+        botEditSave.style.color = 'black'
+        botEditSave.style.fontWeight = 'bold'
+        botEditSave.style.fontSize = '10pt'
+        botEditSave.style.width = '50px'
+        botEditSave.style.textAlign = 'center'
+        botEditSave.style.padding = '2px'
+        botEditSave.style.marginTop = '50px'
+        botEditSave.style.marginLeft = '-345px'
+        tab.appendChild(botEditSave)
         
       })
-      //tab.appendChild(botEditSave)
-      botEditSave.addEventListener('click', function () {
+      
+     botEditSave.addEventListener('click', function () {
         atividCadast.disabled = true
-       
-        botão.disabled = false
-        ativ.disabled = false
-        botEditSave.style.marginTop = '0%'
-        botEditSave.style.marginLeft = '0%'
+       botEditSave.style.visibility = 'hidden'
+      botão.disabled = false
+       ativ.disabled = false
+        
       })
 
 
-      //linha.style.marginLeft = '0%'
-      // linha.style.width = '250px'
+      
 
       atividCadast.type = 'text'
       atividCadast.disabled = true
+     
       atividCadast.style.width = '270px'
       atividCadast.style.marginTop = '20px'
       atividCadast.style.fontSize = '10pt'
@@ -1049,7 +1057,7 @@ function adicionar() {
         atividCadast.style.background = 'white'
       }
       atividCadast.style.borderRadius = '5px'
-      atividCadast.style.marginLeft= '20px'
+      atividCadast.style.marginLeft= '10px'
       atividCadast.style.color = 'black'
       atividCadast.value = ativ.value
 
