@@ -21,7 +21,7 @@ function temaDark() {
 
   titulo.style.background = 'white'
   titulo.style.color = 'black'
-  titulo.style.boxShadow = '5px 5px 10px rgb(66, 66, 65)'
+  titulo.style.boxShadow = '5px 5px 10px black'
   ativ.style.background = 'black'
   ativ.style.color = 'white'
   container.style.background = 'black'
@@ -56,7 +56,7 @@ function temaPadrão() {
   titulo.style.background = 'rgb(139, 194, 29)'
   titulo.style.color = 'white'
   titulo.style.boxShadow = '5px 5px 10px rgb(139, 194, 29)'
-  ativ.style.background = 'white'
+  ativ.style.background = 'rgb(210, 236, 183)'
   ativ.style.color = 'black'
   container.style.background = 'lightgreen'
   container2.style.background = 'linear-gradient(rgb(31, 46, 31), gray, green)'

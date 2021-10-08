@@ -56,11 +56,11 @@
 #padrão button {
     margin-left: 20px;
    font-size: 6pt;
-    background: greenyellow;
+    background: chartreuse;
     color: black;
     cursor: pointer;
     font-weight: bold;
-    box-shadow:0px 0px 5px 3px greenyellow;
+    box-shadow:0px 0px 5px 3px chartreuse;
 }
 }
 
@@ -71,11 +71,11 @@
     margin-left: 50%;
     transform: translate(-50%);
    
-    background: rgb(139, 194, 29);
+    background: chartreuse;
     border-radius: 5px;
     width: 350px;
-    box-shadow:  5px 5px 10px rgb(139, 194, 29);
-    color: white;
+    box-shadow:  0px 5px 3px rgb(178, 243, 114);
+    color: rgb(65, 60, 60)
     
     
 }
@@ -94,9 +94,10 @@ font-size:25pt;
     font-size: 10pt;
     box-shadow:  0px 0px 5px rgb(134, 134, 134);
    border: none;
-    height:20px;   
+    height:22px;   
     width: 100px;
     margin-top: 100px;
+    color: chartreuse;
    
     
 }
@@ -111,14 +112,12 @@ font-size:25pt;
     border-radius: 5px;  
     text-align: center;
     color: rgb(65, 60, 60);
-    background: greenyellow;
+    background: chartreuse;
     font-size: 10pt;
     box-shadow:  0px  0px 8px rgb(105, 179, 136);
     margin-left: 250px;
     margin-top: 100px;
-
-   
-   height:20px;   
+   height:22px;   
     width: 100px; 
     font-weight: bold;
 }
@@ -127,13 +126,16 @@ font-size:25pt;
     position: absolute;
     margin-top: 60px;
     border: none;
-    box-shadow:  3px 3px 7px rgb(134, 134, 134);
+  
    font-weight: bold;
    font-family: space ;
     font-size: 10pt;
     width: 350px;
     height: 20px;
     border-radius: 10px;
+    background: rgb(210, 236, 183);
+    
+    
    
 }
 
